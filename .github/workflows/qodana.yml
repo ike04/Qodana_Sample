@@ -20,7 +20,6 @@ jobs:
           linter: jetbrains/qodana-jvm-android:latest
           fail-threshold: 10
           args: --baseline,qodana.sarif.json
-          cache-default-branch-only: true
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
