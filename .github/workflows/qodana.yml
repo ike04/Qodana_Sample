@@ -15,11 +15,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Skip duplicate actions
-        uses: fkirc/skip-duplicate-actions@v5.3.0
-        with:
-          cancel_others: true
-
       - name: Set up java
         uses: actions/setup-java@v3.9.0
         with:
