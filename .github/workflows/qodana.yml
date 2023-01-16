@@ -20,4 +20,4 @@ jobs:
           pr-mode: false
           use-annotations: true
           upload-result: false
-          args: --linter,jetbrains/qodana-jvm-community:2022.3,--fail-threshold,0
+          args: -l,jetbrains/qodana-jvm-android
