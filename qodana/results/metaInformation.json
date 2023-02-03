@@ -1,14 +1,19 @@
 {
-  "total": 2,
+  "total": 227,
   "tools inspection": {
-    "Code Inspection": 2
+    "Code Inspection": 227
   },
   "linter": "QDAND",
   "attributes": {
     "vcs": {
-      "sarifIdea": {}
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/ike04/Qodana_Sample",
+        "revisionId": "1fddb38ae4548b50591913597ae12189fb5899d4",
+        "branch": "main"
+      }
     },
     "deviceId": "200820300000000-f9a3-6aa9-a984-d2ad41d6b66a",
-    "jobUrl": "https://github.com/ike04/Qodana_Sample/actions/runs/4082884784"
+    "jobUrl": "https://github.com/ike04/Qodana_Sample/actions/runs/4083105672",
+    "repoUrl": "https://github.com/ike04/Qodana_Sample"
   }
 }
