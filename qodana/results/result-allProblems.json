@@ -1,69 +1,5 @@
 {"version":"3","listProblem":[{
   "tool": "Code Inspection",
-  "category": "Proofreading",
-  "type": "Typo",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "Low",
-  "comment": "Typo: In word 'unneccesarry'",
-  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 7,
-      "offset": 9,
-      "length": 12,
-      "code": {
-        "startLine": 5,
-        "length": 12,
-        "offset": 52,
-        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry2: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
-  },
-  "hash": "4561695f9b5bb72054b5358d3c067c575796c4a78d94c4aeee18838c7934f588"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant nullable return type",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
-  "comment": "'unneccesarry2' is always non-null type",
-  "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 7,
-      "offset": 27,
-      "length": 1,
-      "code": {
-        "startLine": 5,
-        "length": 1,
-        "offset": 70,
-        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry2: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "RedundantNullableReturnType",
-    "baselineState": "new"
-  },
-  "hash": "8cab632b295ff023fb947051c0126188d9991f3144babd7b5dfb2ffcad1ad426"
-},{
-  "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Redundant receiver-based 'let' call",
   "tags": [
@@ -77,11 +13,11 @@
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 13,
+      "line": 12,
       "offset": 38,
       "length": 3,
       "code": {
-        "startLine": 11,
+        "startLine": 10,
         "length": 3,
         "offset": 44,
         "surroundingCode": "    }\n\n    fun test2(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
@@ -93,39 +29,7 @@
     "inspectionName": "SimpleRedundantLet",
     "baselineState": "new"
   },
-  "hash": "af8cdfb2ce63dd0328e003b2a4f5932348dfc02dd821425c3b2e468fd9c07a14"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
-  "comment": "Property \"unneccesarry2\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 7,
-      "offset": 9,
-      "length": 13,
-      "code": {
-        "startLine": 5,
-        "length": 13,
-        "offset": 52,
-        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry2: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
-  },
-  "hash": "03d02e00322dff15cdfb245f113698737edb4d0105673a299cedff89e0509f2c"
+  "hash": "526ce9d21d57c0dd2ddd06de851936fc2f002986fb57cd9540011df7444991e2"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -141,11 +45,11 @@
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 13,
+      "line": 12,
       "offset": 9,
       "length": 5,
       "code": {
-        "startLine": 11,
+        "startLine": 10,
         "length": 5,
         "offset": 15,
         "surroundingCode": "    }\n\n    fun test2(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
@@ -157,5 +61,5 @@
     "inspectionName": "UnusedSymbol",
     "baselineState": "new"
   },
-  "hash": "72697d0c745c6dff76f2845dfa0c3190be1f3a45366b38f269cd793a9dcbbaba"
+  "hash": "d5a3b19d123b5152b7de4d9ac8aee84a4d9bfee73c764aa486b4ca08d1ee5b4c"
 }]}

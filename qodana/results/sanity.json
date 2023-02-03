@@ -6,37 +6,6 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Unresolved reference: Bundle",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 8,
-      "offset": 47,
-      "length": 6,
-      "code": {
-        "startLine": 6,
-        "length": 6,
-        "offset": 121,
-        "surroundingCode": "class MainActivity : AppCompatActivity() {\n    val unneccesarry2: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "8501399d518f228a70dbc2aedf1cbaa7b8d8734a4a3b0639df5ec3b018114bc2"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
   "comment": "Cannot access 'android.app.Activity' which is a supertype of 'com.example.qodana_sample.MainActivity'. Check your module classpath for missing or conflicting dependencies",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
@@ -44,14 +13,14 @@
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 9,
-      "offset": 9,
+      "line": 6,
+      "offset": 1,
       "length": 5,
       "code": {
-        "startLine": 7,
+        "startLine": 4,
         "length": 5,
-        "offset": 97,
-        "surroundingCode": "    val unneccesarry2: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n    }"
+        "offset": 49,
+        "surroundingCode": "import androidx.appcompat.app.AppCompatActivity\n\nclass MainActivity : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
       }
     }
   ],
@@ -59,7 +28,7 @@
     "module": "Qodana__Sample.app.main",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "0cfe0ca92d967571767c0f460e1d4de18065190e760f66fe26bb276360fb70ee"
+  "hash": "4142cb3ff22f97956147accbb32b1a21d60f67c329ecbf27ab84bf02c376c48b"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -75,14 +44,14 @@
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 9,
-      "offset": 9,
+      "line": 6,
+      "offset": 1,
       "length": 5,
       "code": {
-        "startLine": 7,
+        "startLine": 4,
         "length": 5,
-        "offset": 97,
-        "surroundingCode": "    val unneccesarry2: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n    }"
+        "offset": 49,
+        "surroundingCode": "import androidx.appcompat.app.AppCompatActivity\n\nclass MainActivity : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
       }
     }
   ],
@@ -90,7 +59,7 @@
     "module": "Qodana__Sample.app.main",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "a16abdaae3ad0ceae54f0ed4382bd58b762cdc5d50e06fcde71b4af303833cc1"
+  "hash": "8f20d7efd46513804e1e9b3c8a9bb2616d6322a16ffa2978dd2214dcf4107a6f"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -99,21 +68,21 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Cannot access 'android.app.Activity' which is a supertype of 'androidx.fragment.app.FragmentActivity'. Check your module classpath for missing or conflicting dependencies",
+  "comment": "Unresolved reference: os",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 9,
-      "offset": 15,
-      "length": 8,
+      "line": 3,
+      "offset": 16,
+      "length": 2,
       "code": {
-        "startLine": 7,
-        "length": 8,
-        "offset": 103,
-        "surroundingCode": "    val unneccesarry2: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n    }"
+        "startLine": 1,
+        "length": 2,
+        "offset": 50,
+        "surroundingCode": "package com.example.qodana_sample\n\nimport android.os.Bundle\nimport androidx.appcompat.app.AppCompatActivity\n"
       }
     }
   ],
@@ -121,5 +90,36 @@
     "module": "Qodana__Sample.app.main",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "c2496e54ed3aee9e0b47605d7eb78c4ee36bc6930f902cd06656a56b7cbbf2fa"
+  "hash": "e85c6398858ae08222550ff2503cc39e3ecb667a3081994c785cb0bc245032c7"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Bundle",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 7,
+      "offset": 47,
+      "length": 6,
+      "code": {
+        "startLine": 5,
+        "length": 6,
+        "offset": 90,
+        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "d93503c009bfb9c86e420d9deaecf0b6102869d3b253af9ee654be2db32c04c3"
 }]}
