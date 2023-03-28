@@ -1,5 +1,549 @@
 {"version":"3","listProblem":[{
   "tool": "Code Inspection",
+  "category": "Android Lint: Correctness",
+  "type": "Obsolete Gradle Dependency",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "High",
+  "comment": "A newer version of androidx.core:core-ktx than 1.7.0 is available: 1.9.0",
+  "detailsInfo": "Obsolete Gradle Dependency  \n\nThis detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.  \n\nIssue id: GradleDependency",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/build.gradle",
+      "language": "Groovy",
+      "line": 37,
+      "offset": 20,
+      "length": 30,
+      "code": {
+        "startLine": 35,
+        "length": 30,
+        "offset": 35,
+        "surroundingCode": "dependencies {\n\n    implementation 'androidx.core:core-ktx:1.7.0'\n    implementation 'androidx.appcompat:appcompat:1.4.1'\n    implementation 'com.google.android.material:material:1.5.0'"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app",
+    "inspectionName": "AndroidLintGradleDependency",
+    "baselineState": "new"
+  },
+  "hash": "b3d7cd42c0e2dc8db45be9d0692481645ad602f1ed550ebc376e08eca1fa1c73"
+},{
+  "tool": "Code Inspection",
+  "category": "Android Lint: Correctness",
+  "type": "Obsolete Gradle Dependency",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "High",
+  "comment": "A newer version of androidx.appcompat:appcompat than 1.4.1 is available: 1.6.1",
+  "detailsInfo": "Obsolete Gradle Dependency  \n\nThis detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.  \n\nIssue id: GradleDependency",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/build.gradle",
+      "language": "Groovy",
+      "line": 38,
+      "offset": 20,
+      "length": 36,
+      "code": {
+        "startLine": 36,
+        "length": 36,
+        "offset": 70,
+        "surroundingCode": "\n    implementation 'androidx.core:core-ktx:1.7.0'\n    implementation 'androidx.appcompat:appcompat:1.4.1'\n    implementation 'com.google.android.material:material:1.5.0'\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app",
+    "inspectionName": "AndroidLintGradleDependency",
+    "baselineState": "new"
+  },
+  "hash": "50e23aa0450af7902d5f6ca32286dc78c76e30fb3b8021bdf280ab0c96d15fe3"
+},{
+  "tool": "Code Inspection",
+  "category": "Android Lint: Correctness",
+  "type": "Obsolete Gradle Dependency",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "High",
+  "comment": "A newer version of com.google.android.material:material than 1.5.0 is available: 1.8.0",
+  "detailsInfo": "Obsolete Gradle Dependency  \n\nThis detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.  \n\nIssue id: GradleDependency",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/build.gradle",
+      "language": "Groovy",
+      "line": 39,
+      "offset": 20,
+      "length": 44,
+      "code": {
+        "startLine": 37,
+        "length": 44,
+        "offset": 125,
+        "surroundingCode": "    implementation 'androidx.core:core-ktx:1.7.0'\n    implementation 'androidx.appcompat:appcompat:1.4.1'\n    implementation 'com.google.android.material:material:1.5.0'\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'\n    testImplementation 'junit:junit:4.13.2'"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app",
+    "inspectionName": "AndroidLintGradleDependency",
+    "baselineState": "new"
+  },
+  "hash": "1e0759e38d492e5191d8d6afea6c0cee563894eb972cb19d67acd507ffaac130"
+},{
+  "tool": "Code Inspection",
+  "category": "Android Lint: Correctness",
+  "type": "Obsolete Gradle Dependency",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "High",
+  "comment": "A newer version of androidx.constraintlayout:constraintlayout than 2.1.3 is available: 2.1.4",
+  "detailsInfo": "Obsolete Gradle Dependency  \n\nThis detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.  \n\nIssue id: GradleDependency",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/build.gradle",
+      "language": "Groovy",
+      "line": 40,
+      "offset": 20,
+      "length": 50,
+      "code": {
+        "startLine": 38,
+        "length": 50,
+        "offset": 139,
+        "surroundingCode": "    implementation 'androidx.appcompat:appcompat:1.4.1'\n    implementation 'com.google.android.material:material:1.5.0'\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'\n    testImplementation 'junit:junit:4.13.2'\n    androidTestImplementation 'androidx.test.ext:junit:1.1.4'"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app",
+    "inspectionName": "AndroidLintGradleDependency",
+    "baselineState": "new"
+  },
+  "hash": "b7a1d3c7912bec24171d5e8a96f1bd45181426c8424725040a3059096c329bb8"
+},{
+  "tool": "Code Inspection",
+  "category": "Android Lint: Correctness",
+  "type": "Obsolete Gradle Dependency",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "High",
+  "comment": "A newer version of androidx.test.ext:junit than 1.1.4 is available: 1.1.5",
+  "detailsInfo": "Obsolete Gradle Dependency  \n\nThis detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.  \n\nIssue id: GradleDependency",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/build.gradle",
+      "language": "Groovy",
+      "line": 42,
+      "offset": 31,
+      "length": 31,
+      "code": {
+        "startLine": 40,
+        "length": 31,
+        "offset": 144,
+        "surroundingCode": "    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'\n    testImplementation 'junit:junit:4.13.2'\n    androidTestImplementation 'androidx.test.ext:junit:1.1.4'\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app",
+    "inspectionName": "AndroidLintGradleDependency",
+    "baselineState": "new"
+  },
+  "hash": "2d37dd6ea30a4b5ae73630400293feb8f52b7fbadaa334fda493bd88979fe73f"
+},{
+  "tool": "Code Inspection",
+  "category": "Android Lint: Correctness",
+  "type": "Obsolete Gradle Dependency",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "High",
+  "comment": "A newer version of androidx.test.espresso:espresso-core than 3.5.0 is available: 3.5.1",
+  "detailsInfo": "Obsolete Gradle Dependency  \n\nThis detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.  \n\nIssue id: GradleDependency",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/build.gradle",
+      "language": "Groovy",
+      "line": 43,
+      "offset": 31,
+      "length": 44,
+      "code": {
+        "startLine": 41,
+        "length": 44,
+        "offset": 136,
+        "surroundingCode": "    testImplementation 'junit:junit:4.13.2'\n    androidTestImplementation 'androidx.test.ext:junit:1.1.4'\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app",
+    "inspectionName": "AndroidLintGradleDependency",
+    "baselineState": "new"
+  },
+  "hash": "4c4a0a1968ca22f989830137612a467275fb1dad9798285f75f7a3b892ee8ad6"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "textmate"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'setlocal'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "gradlew.bat",
+      "language": "textmate",
+      "line": 25,
+      "offset": 25,
+      "length": 8,
+      "code": {
+        "startLine": 23,
+        "length": 8,
+        "offset": 88,
+        "surroundingCode": "\r\n@rem Set local scope for the variables with windows NT shell\r\nif \"%OS%\"==\"Windows_NT\" setlocal\r\n\r\nset DIRNAME=%~dp0\r"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "b9599ad4ba9151d010fbfea8aa63c72fc8da9c001da1b3525f78deb3f2b72939"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "textmate"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'ERRORLEVEL'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "gradlew.bat",
+      "language": "textmate",
+      "line": 43,
+      "offset": 6,
+      "length": 10,
+      "code": {
+        "startLine": 41,
+        "length": 10,
+        "offset": 59,
+        "surroundingCode": "set JAVA_EXE=java.exe\r\n%JAVA_EXE% -version >NUL 2>&1\r\nif \"%ERRORLEVEL%\" == \"0\" goto execute\r\n\r\necho.\r"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "7107f0dc6c4f6ce7d9f28e66614f2700c9185852f48ceaf439bdb1d49eb3c931"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "textmate"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'Dorg'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "gradlew.bat",
+      "language": "textmate",
+      "line": 74,
+      "offset": 61,
+      "length": 4,
+      "code": {
+        "startLine": 72,
+        "length": 4,
+        "offset": 83,
+        "surroundingCode": "\r\n@rem Execute Gradle\r\n\"%JAVA_EXE%\" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% \"-Dorg.gradle.appname=%APP_BASE_NAME%\" -classpath \"%CLASSPATH%\" org.gradle.wrapper.GradleWrapperMain %*\r\n\r\n:end\r"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "36709a08795349a54b9b8bd0af922f9e08bb5b8d1551128ed99795132dcf5406"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "textmate"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'appname'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "gradlew.bat",
+      "language": "textmate",
+      "line": 74,
+      "offset": 73,
+      "length": 7,
+      "code": {
+        "startLine": 72,
+        "length": 7,
+        "offset": 95,
+        "surroundingCode": "\r\n@rem Execute Gradle\r\n\"%JAVA_EXE%\" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% \"-Dorg.gradle.appname=%APP_BASE_NAME%\" -classpath \"%CLASSPATH%\" org.gradle.wrapper.GradleWrapperMain %*\r\n\r\n:end\r"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "a86b349bfdebe742773865b514540d9e62e79a883de0a6dea5bc80c269727878"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "textmate"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'endlocal'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "gradlew.bat",
+      "language": "textmate",
+      "line": 87,
+      "offset": 25,
+      "length": 8,
+      "code": {
+        "startLine": 85,
+        "length": 8,
+        "offset": 36,
+        "surroundingCode": "\r\n:mainEnd\r\nif \"%OS%\"==\"Windows_NT\" endlocal\r\n\r\n:omega\r"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "0168339cd6dec558c96627c5e86ddb0928fe4a61fe4357c5c59aae318b2a535a"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "yaml"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'peaceiris'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": ".github/workflows/qodana.yml",
+      "language": "yaml",
+      "line": 26,
+      "offset": 15,
+      "length": 9,
+      "code": {
+        "startLine": 24,
+        "length": 9,
+        "offset": 174,
+        "surroundingCode": "        run: echo \"::set-output name=result::$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json)\"\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "697a488c943a48049caabb380478551d22ab79848dfeb3e1e57004a0e70ef3b3"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "XML"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'sharedpref'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/res/xml/backup_rules.xml",
+      "language": "XML",
+      "line": 10,
+      "offset": 21,
+      "length": 10,
+      "code": {
+        "startLine": 8,
+        "length": 10,
+        "offset": 51,
+        "surroundingCode": "<full-backup-content>\n    <!--\n   <include domain=\"sharedpref\" path=\".\"/>\n   <exclude domain=\"sharedpref\" path=\"device.xml\"/>\n-->"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "bd379c03660a4d8fcf07b1f4441dc01e6bda27b330e7562f900cb93333cc8f13"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'unneccesarry'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 8,
+      "offset": 9,
+      "length": 12,
+      "code": {
+        "startLine": 6,
+        "length": 12,
+        "offset": 52,
+        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "b24b30ac468173e371a3380dc3a4fdb7df6ac9194699b07e965478fd7a67b104"
+},{
+  "tool": "Code Inspection",
+  "category": "Assignment issues",
+  "type": "Incompatible type assignments",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "Moderate",
+  "comment": "Cannot infer argument types",
+  "detailsInfo": "Reports assignments with incompatible types.\n\nSuch assignments might result in various runtime exceptions.\n\n**Example:**\n\n\n      class A {}\n      class B {}\n\n      // incompatible assignment\n      A a = new B()\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "settings.gradle",
+      "language": "Groovy",
+      "line": 9,
+      "offset": 25,
+      "length": 40,
+      "code": {
+        "startLine": 7,
+        "length": 40,
+        "offset": 59,
+        "surroundingCode": "}\ndependencyResolutionManagement {\n    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)\n    repositories {\n        google()"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "GroovyAssignabilityCheck",
+    "baselineState": "new"
+  },
+  "hash": "25ad84636e1961824a4ef2624acfe5e41be2d013a7dbfce9da9c08a1ff708ea2"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant nullable return type",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "'unneccesarry' is always non-null type",
+  "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 8,
+      "offset": 26,
+      "length": 1,
+      "code": {
+        "startLine": 6,
+        "length": 1,
+        "offset": 69,
+        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "RedundantNullableReturnType",
+    "baselineState": "new"
+  },
+  "hash": "4c9303d7db0c4ad12dce7c258bfcb400e90d48c10edb491cf5ea6fc415b59660"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant nullable return type",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "'greeting' always returns non-null type",
+  "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 20,
+      "offset": 39,
+      "length": 1,
+      "code": {
+        "startLine": 18,
+        "length": 1,
+        "offset": 45,
+        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "RedundantNullableReturnType",
+    "baselineState": "new"
+  },
+  "hash": "ca88537fe28e43470a2a19e6d76944888479edd828c9d098246f3141c1cad9b8"
+},{
+  "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Redundant receiver-based 'let' call",
   "tags": [
@@ -13,14 +557,14 @@
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 12,
-      "offset": 38,
+      "line": 14,
+      "offset": 37,
       "length": 3,
       "code": {
-        "startLine": 10,
+        "startLine": 12,
         "length": 3,
-        "offset": 44,
-        "surroundingCode": "    }\n\n    fun test2(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
+        "offset": 43,
+        "surroundingCode": "    }\n\n    fun test(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
       }
     }
   ],
@@ -29,7 +573,379 @@
     "inspectionName": "SimpleRedundantLet",
     "baselineState": "new"
   },
-  "hash": "526ce9d21d57c0dd2ddd06de851936fc2f002986fb57cd9540011df7444991e2"
+  "hash": "6241d2c5cf57eeb5e0530bbb284874b9779adc82acc90e96fc2ea24fe97e773d"
+},{
+  "tool": "Code Inspection",
+  "category": "Android Lint: Usability",
+  "type": "Monochrome icon is not defined",
+  "tags": [
+    "XML"
+  ],
+  "severity": "High",
+  "comment": "The application adaptive icon is missing a monochrome tag",
+  "detailsInfo": "Monochrome icon is not defined  \n\nIf `android:roundIcon` and `android:icon` are both in your manifest, you must either remove the reference to `android:roundIcon` if it is not needed; or, supply the monochrome icon in the drawable defined by the `android:roundIcon` and `android:icon` attribute.  \n\nFor example, if `android:roundIcon` and `android:icon` are both in the manifest, a launcher might choose to use `android:roundIcon` over `android:icon` to display the adaptive app icon. Therefore, your themed application iconwill not show if your monochrome attribute is not also specified in `android:roundIcon`.  \n\nIssue id: MonochromeLauncherIcon",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "language": "XML",
+      "line": 2,
+      "offset": 1,
+      "length": 233,
+      "code": {
+        "startLine": 1,
+        "length": 233,
+        "offset": 39,
+        "surroundingCode": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <background android:drawable=\"@drawable/ic_launcher_background\" />\n    <foreground android:drawable=\"@drawable/ic_launcher_foreground\" />\n</adaptive-icon>"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "AndroidLintMonochromeLauncherIcon",
+    "baselineState": "new"
+  },
+  "hash": "5954ffd07c2fc4d9e034f1e05e747a17425de4d5a5ff02852788151b9ff30b56"
+},{
+  "tool": "Code Inspection",
+  "category": "Android Lint: Usability",
+  "type": "Monochrome icon is not defined",
+  "tags": [
+    "XML"
+  ],
+  "severity": "High",
+  "comment": "The application adaptive roundIcon is missing a monochrome tag",
+  "detailsInfo": "Monochrome icon is not defined  \n\nIf `android:roundIcon` and `android:icon` are both in your manifest, you must either remove the reference to `android:roundIcon` if it is not needed; or, supply the monochrome icon in the drawable defined by the `android:roundIcon` and `android:icon` attribute.  \n\nFor example, if `android:roundIcon` and `android:icon` are both in the manifest, a launcher might choose to use `android:roundIcon` over `android:icon` to display the adaptive app icon. Therefore, your themed application iconwill not show if your monochrome attribute is not also specified in `android:roundIcon`.  \n\nIssue id: MonochromeLauncherIcon",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "language": "XML",
+      "line": 2,
+      "offset": 1,
+      "length": 233,
+      "code": {
+        "startLine": 1,
+        "length": 233,
+        "offset": 39,
+        "surroundingCode": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <background android:drawable=\"@drawable/ic_launcher_background\" />\n    <foreground android:drawable=\"@drawable/ic_launcher_foreground\" />\n</adaptive-icon>"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "AndroidLintMonochromeLauncherIcon",
+    "baselineState": "new"
+  },
+  "hash": "40d7f88fdba2330658465c35d7fda3544a0b09134bcdd35ed8d019283c02cbc2"
+},{
+  "tool": "Code Inspection",
+  "category": "XML",
+  "type": "Unused schema declaration",
+  "tags": [
+    "XML"
+  ],
+  "severity": "High",
+  "comment": "Namespace declaration is never used",
+  "detailsInfo": "Reports an unused namespace declaration or location hint in XML.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/res/values/themes.xml",
+      "language": "XML",
+      "line": 1,
+      "offset": 12,
+      "length": 46,
+      "code": {
+        "startLine": 1,
+        "length": 46,
+        "offset": 11,
+        "surroundingCode": "<resources xmlns:tools=\"http://schemas.android.com/tools\">\n    <!-- Base application theme. -->\n    <style name=\"Theme.Qodana_Sample\" parent=\"Theme.MaterialComponents.DayNight.DarkActionBar\">"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "XmlUnusedNamespaceDeclaration",
+    "baselineState": "new"
+  },
+  "hash": "c31d8733c9c93e79eef8e2ea95e452c2706ea3e9d364bd43c419273e704c8f91"
+},{
+  "tool": "Code Inspection",
+  "category": "XML",
+  "type": "Unused schema declaration",
+  "tags": [
+    "XML"
+  ],
+  "severity": "High",
+  "comment": "Namespace declaration is never used",
+  "detailsInfo": "Reports an unused namespace declaration or location hint in XML.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/res/values-night/themes.xml",
+      "language": "XML",
+      "line": 1,
+      "offset": 12,
+      "length": 46,
+      "code": {
+        "startLine": 1,
+        "length": 46,
+        "offset": 11,
+        "surroundingCode": "<resources xmlns:tools=\"http://schemas.android.com/tools\">\n    <!-- Base application theme. -->\n    <style name=\"Theme.Qodana_Sample\" parent=\"Theme.MaterialComponents.DayNight.DarkActionBar\">"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "XmlUnusedNamespaceDeclaration",
+    "baselineState": "new"
+  },
+  "hash": "f188d3ba505e988ed2dfb9ec3eed32a27af40a3e381d6348bf23c2ff64283147"
+},{
+  "tool": "Code Inspection",
+  "category": "Style issues",
+  "type": "Call chain on collection type can be simplified",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "Moderate",
+  "comment": "Call chain on collection type may be simplified",
+  "detailsInfo": "Reports two-call chains replaceable by a single call.\n\nIt can help you to avoid redundant code execution.\n\nThe quick-fix replaces the call chain with a single call.\n\n**Example:**\n\n\n      fun main() {\n          listOf(1, 2, 3).filter { it > 1 }.count()\n      }\n\nAfter the quick-fix is applied:\n\n\n      fun main() {\n          listOf(1, 2, 3).count { it > 1 }\n      }\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 17,
+      "offset": 25,
+      "length": 6,
+      "code": {
+        "startLine": 15,
+        "length": 6,
+        "offset": 42,
+        "surroundingCode": "\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "SimplifiableCallChain",
+    "baselineState": "new"
+  },
+  "hash": "700fccc9e3a939d35c7359b21fa3bb4b63f9f79ec48046894e8809e31ffe6bae"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused import directive",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Unused import directive",
+  "detailsInfo": "Reports redundant `import` statements.\n\nDefault and unused imports can be safely removed.\n\n**Example:**\n\n\n      import kotlin.*\n      import kotlin.collections.*\n      import kotlin.comparisons.*\n      import kotlin.io.*\n      import kotlin.ranges.*\n      import kotlin.sequences.*\n      import kotlin.text.*\n\n      // jvm specific\n      import java.lang.*\n      import kotlin.jvm.*\n\n      // js specific\n      import kotlin.js.*\n\n      import java.io.* // this import is unused and could be removed\n      import java.util.*\n\n      fun foo(list: ArrayList<String>) {\n          list.add(\"\")\n      }\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 1,
+      "length": 23,
+      "code": {
+        "startLine": 3,
+        "length": 23,
+        "offset": 73,
+        "surroundingCode": "import androidx.appcompat.app.AppCompatActivity\nimport android.os.Bundle\nimport android.util.Log\n\nclass MainActivity : AppCompatActivity() {"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "KotlinUnusedImport",
+    "baselineState": "new"
+  },
+  "hash": "ad51c116bce45e248fb66e7df069d8a3be489a79ccfb63b65180a41855cccc61"
+},{
+  "tool": "Code Inspection",
+  "category": "Android Lint: Performance",
+  "type": "Obsolete SDK_INT Version Check",
+  "severity": "High",
+  "comment": "This folder configuration ('v24') is unnecessary; 'minSdkVersion' is 26. Merge all the resources in this folder into 'drawable'.",
+  "detailsInfo": "Obsolete SDK_INT Version Check  \n\nThis check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.  \n\nSimilarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder.  \n\nIssue id: ObsoleteSdkInt",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/res/drawable-v24",
+      "language": "",
+      "line": 0,
+      "offset": 0,
+      "length": 0,
+      "code": {
+        "startLine": 0,
+        "length": 0,
+        "offset": 0,
+        "surroundingCode": ""
+      }
+    }
+  ],
+  "attributes": {
+    "module": "",
+    "inspectionName": "AndroidLintObsoleteSdkInt",
+    "baselineState": "new"
+  },
+  "hash": "2e6d47f5e908fef67d82485ce77c82fe3c32a15bf89eedb0492da267f5c8d5ca"
+},{
+  "tool": "Code Inspection",
+  "category": "Android Lint: Performance",
+  "type": "Obsolete SDK_INT Version Check",
+  "severity": "High",
+  "comment": "This folder configuration ('v26') is unnecessary; 'minSdkVersion' is 26. Merge all the resources in this folder into 'mipmap-anydpi'.",
+  "detailsInfo": "Obsolete SDK_INT Version Check  \n\nThis check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.  \n\nSimilarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder.  \n\nIssue id: ObsoleteSdkInt",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/res/mipmap-anydpi-v26",
+      "language": "",
+      "line": 0,
+      "offset": 0,
+      "length": 0,
+      "code": {
+        "startLine": 0,
+        "length": 0,
+        "offset": 0,
+        "surroundingCode": ""
+      }
+    }
+  ],
+  "attributes": {
+    "module": "",
+    "inspectionName": "AndroidLintObsoleteSdkInt",
+    "baselineState": "new"
+  },
+  "hash": "a29dab3f892c10fc3ed4b4a4a4dff8bd766b3f6311b1cf59ce284b3340277b1b"
+},{
+  "tool": "Code Inspection",
+  "category": "Declaration redundancy",
+  "type": "Unnecessary module dependency",
+  "severity": "High",
+  "comment": "Module 'Qodana__Sample.app.unitTest' sources do not depend on module 'Qodana__Sample.app.main' sources",
+  "detailsInfo": "Reports dependencies on modules that are not used. The quick-fix safely removes such unused dependencies.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "Qodana__Sample.app.unitTest",
+      "language": "",
+      "line": 0,
+      "offset": 0,
+      "length": 0,
+      "code": {
+        "startLine": 0,
+        "length": 0,
+        "offset": 0,
+        "surroundingCode": ""
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.unitTest",
+    "inspectionName": "UnnecessaryModuleDependencyInspection",
+    "baselineState": "new"
+  },
+  "hash": "89475afca9a7768eda143d1ae16b1ccfeb85393810d0cb94ccb629610749122b"
+},{
+  "tool": "Code Inspection",
+  "category": "Declaration redundancy",
+  "type": "Unnecessary module dependency",
+  "severity": "High",
+  "comment": "Module 'Qodana__Sample.app.androidTest' sources do not depend on module 'Qodana__Sample.app.main' sources",
+  "detailsInfo": "Reports dependencies on modules that are not used. The quick-fix safely removes such unused dependencies.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "Qodana__Sample.app.androidTest",
+      "language": "",
+      "line": 0,
+      "offset": 0,
+      "length": 0,
+      "code": {
+        "startLine": 0,
+        "length": 0,
+        "offset": 0,
+        "surroundingCode": ""
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "UnnecessaryModuleDependencyInspection",
+    "baselineState": "new"
+  },
+  "hash": "dd4dc0655d262e0369cbc135eca9d2f9c5d2c5cd7e45c6d7d87e69eb86385914"
+},{
+  "tool": "Code Inspection",
+  "category": "Probable bugs",
+  "type": "Unresolved reference expression",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "Moderate",
+  "comment": "Cannot resolve symbol 'kotlinOptions'",
+  "detailsInfo": "Reports reference expressions which cannot be resolved.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/build.gradle",
+      "language": "Groovy",
+      "line": 30,
+      "offset": 5,
+      "length": 13,
+      "code": {
+        "startLine": 28,
+        "length": 13,
+        "offset": 62,
+        "surroundingCode": "        targetCompatibility JavaVersion.VERSION_1_8\n    }\n    kotlinOptions {\n        jvmTarget = '1.8'\n    }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app",
+    "inspectionName": "GrUnresolvedAccess",
+    "baselineState": "new"
+  },
+  "hash": "0e67a39ada80bf912562eb1aa80c9785cf50fb82578544b12a883850ced6f7e1"
+},{
+  "tool": "Code Inspection",
+  "category": "Probable bugs",
+  "type": "Unresolved reference expression",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "Moderate",
+  "comment": "Cannot resolve symbol 'RepositoriesMode'",
+  "detailsInfo": "Reports reference expressions which cannot be resolved.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "settings.gradle",
+      "language": "Groovy",
+      "line": 9,
+      "offset": 26,
+      "length": 16,
+      "code": {
+        "startLine": 7,
+        "length": 16,
+        "offset": 60,
+        "surroundingCode": "}\ndependencyResolutionManagement {\n    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)\n    repositories {\n        google()"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "GrUnresolvedAccess",
+    "baselineState": "new"
+  },
+  "hash": "5984519b96be968c3ca5ce33f4729d572b0bb312498b01da6f86ffac3cb47ed6"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -38,21 +954,21 @@
     "kotlin"
   ],
   "severity": "High",
-  "comment": "Function \"test2\" is never used",
+  "comment": "Function \"test\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 12,
+      "line": 14,
       "offset": 9,
-      "length": 5,
+      "length": 4,
       "code": {
-        "startLine": 10,
-        "length": 5,
+        "startLine": 12,
+        "length": 4,
         "offset": 15,
-        "surroundingCode": "    }\n\n    fun test2(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
+        "surroundingCode": "    }\n\n    fun test(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
       }
     }
   ],
@@ -61,5 +977,101 @@
     "inspectionName": "UnusedSymbol",
     "baselineState": "new"
   },
-  "hash": "d5a3b19d123b5152b7de4d9ac8aee84a4d9bfee73c764aa486b4ca08d1ee5b4c"
+  "hash": "16756fa526673ceec02ed070f17223bec8c822ba104b3e0967714d6dbe5a5614"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Property \"unneccesarry\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 8,
+      "offset": 9,
+      "length": 12,
+      "code": {
+        "startLine": 6,
+        "length": 12,
+        "offset": 52,
+        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "baselineState": "new"
+  },
+  "hash": "6bc6d5264eb7051348fb3343d882963aa24414fa987297ebd3f85d1fa837079d"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"greeting\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 20,
+      "offset": 9,
+      "length": 8,
+      "code": {
+        "startLine": 18,
+        "length": 8,
+        "offset": 15,
+        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "baselineState": "new"
+  },
+  "hash": "ae0d24c7dfe18a066109607be65d7898c24d7b764dfe3fa2721f0868d7fb1a8e"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"main\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 16,
+      "offset": 9,
+      "length": 4,
+      "code": {
+        "startLine": 14,
+        "length": 4,
+        "offset": 63,
+        "surroundingCode": "    fun test(s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "baselineState": "new"
+  },
+  "hash": "54c85073bfa9662d6e172fcbc761c8989013cd3ff8aa1163b716b9da8607c8e9"
 }]}
