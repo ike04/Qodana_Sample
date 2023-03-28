@@ -2,10 +2,10 @@ name: Qodana
 
 on:
   push:
-    branches: [ main ]
+    branches: [ fix_yml ]
     paths-ignore: [ '**.md', '**.MD' ]
   pull_request:
-    branches: [ main ]
+    branches: [ fix_yml ]
     paths-ignore: [ '**.md', '**.MD' ]
   workflow_dispatch:
 
@@ -20,6 +20,8 @@ jobs:
           linter: jetbrains/qodana-jvm-android:latest
           fail-threshold: 10
           args: --baseline,qodana.sarif.json
+      - name: Get Qodana Result
+          run: echo "::set-output name=result::$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json)"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
