@@ -21,7 +21,7 @@ jobs:
           fail-threshold: 10
           args: --baseline,qodana.sarif.json
       - name: Get Qodana Result
-          run: echo "::set-output name=result::$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json)"
+        run: echo "::set-output name=result::$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json)"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
