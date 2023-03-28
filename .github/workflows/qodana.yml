@@ -23,7 +23,7 @@ jobs:
       - name: Get Qodana Result
         run: echo "::set-output name=result::$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json)"
       - name: echo total
-        run: echo fromJson(steps.get_result.outputs.result).total
+        run: echo "fromJson(steps.get_result.outputs.result).total"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
