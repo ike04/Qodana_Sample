@@ -27,7 +27,7 @@ jobs:
         run: |
           # Artifactsを展開する
           mkdir result
-          tar -xvf ${{ github.event.client_payload.artifact_url }} -C result/　{ runner.temp }}/qodana/results/report/results/result-allProblems.json
+          tar -xvf ${{ github.event.client_payload.artifact_url }} -C { runner.temp }}/qodana/results/report/results/result-allProblems.json
             
           # Pythonを実行してCriticalの数を数える
           python count_critical.py
