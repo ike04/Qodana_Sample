@@ -19,7 +19,7 @@ jobs:
         with:
           linter: jetbrains/qodana-jvm-android:latest
           fail-threshold: 10
-          args: --baseline,qodana.sarif.json
+          args: --baseline,qodana.sarif.json, --save-report
       - name: Get Qodana Result
         id: parse_json
         run: echo "$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')"
