@@ -173,14 +173,14 @@
       "type": "file",
       "path": ".github/workflows/qodana.yml",
       "language": "yaml",
-      "line": 28,
+      "line": 27,
       "offset": 15,
       "length": 9,
       "code": {
-        "startLine": 26,
+        "startLine": 25,
         "length": 9,
-        "offset": 119,
-        "surroundingCode": "        run: echo \"fromJson(steps.get_result.outputs.result).total\"\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
+        "offset": 147,
+        "surroundingCode": "        run: echo \"$(cat ${{ runner.temp }}/qodana/results/qodana.sarif.json | jq -r '.total')\"\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
       }
     }
   ],
@@ -189,7 +189,7 @@
     "inspectionName": "SpellCheckingInspection",
     "baselineState": "new"
   },
-  "hash": "e9088bc547fd79d12b19d4bd5ecc8b3062aa2ad8c5796ed2ee0020ce4bc7af14"
+  "hash": "f3e4f471585af554cc9c6406a441d22f790356221937b580875d1f524791c072"
 },{
   "tool": "Code Inspection",
   "category": "Proofreading",
@@ -7136,38 +7136,6 @@
     "kotlin"
   ],
   "severity": "High",
-  "comment": "Function \"main\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 16,
-      "offset": 9,
-      "length": 4,
-      "code": {
-        "startLine": 14,
-        "length": 4,
-        "offset": 63,
-        "surroundingCode": "    fun test(s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
-  },
-  "hash": "54c85073bfa9662d6e172fcbc761c8989013cd3ff8aa1163b716b9da8607c8e9"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
   "comment": "Function \"greeting\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
@@ -7192,6 +7160,38 @@
     "baselineState": "new"
   },
   "hash": "ae0d24c7dfe18a066109607be65d7898c24d7b764dfe3fa2721f0868d7fb1a8e"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"main\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 16,
+      "offset": 9,
+      "length": 4,
+      "code": {
+        "startLine": 14,
+        "length": 4,
+        "offset": 63,
+        "surroundingCode": "    fun test(s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "baselineState": "new"
+  },
+  "hash": "54c85073bfa9662d6e172fcbc761c8989013cd3ff8aa1163b716b9da8607c8e9"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
