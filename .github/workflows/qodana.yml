@@ -22,9 +22,7 @@ jobs:
           args: --baseline,qodana.sarif.json
       - name: Get Qodana Result
         id: parse_json
-        run: echo "::set-output name=result::$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json)"
-      - name: echo total
-        run: echo "${{ fromJson(steps.parse_json.outputs.result).total }}"
+        run: echo "$(cat ${{ runner.temp }}/qodana/results/qodana.sarif.json | jq -r '.total')"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
