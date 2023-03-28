@@ -8,12 +8,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/ike04/Qodana_Sample",
-        "revisionId": "e9fe478b224e4ca26224ae297b6addf018b19df5",
+        "revisionId": "f013e525ea5b535fb85d213eae67e439a47bd30a",
         "branch": "fix_yml"
       }
     },
     "deviceId": "200820300000000-f9a3-6aa9-a984-d2ad41d6b66a",
-    "jobUrl": "https://github.com/ike04/Qodana_Sample/actions/runs/4541640866",
+    "jobUrl": "https://github.com/ike04/Qodana_Sample/actions/runs/4541678972",
     "repoUrl": "https://github.com/ike04/Qodana_Sample"
   }
 }
