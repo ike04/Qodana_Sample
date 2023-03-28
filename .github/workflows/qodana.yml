@@ -23,6 +23,15 @@ jobs:
       - name: Get Qodana Result
         id: parse_json
         run: echo "$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')"
+      - name: Count Critical Errors
+        run: |
+          # Artifactsを展開する
+          mkdir result
+          tar -xvf ${{ github.event.client_payload.artifact_url }} -C result/　{ runner.temp }}/qodana/results/report/results/result-allProblems.json
+            
+          # Pythonを実行してCriticalの数を数える
+          python count_critical.py
+        shell: bash
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
