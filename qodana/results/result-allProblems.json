@@ -26,8 +26,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
+    "inspectionName": "SpellCheckingInspection"
   },
   "hash": "b9599ad4ba9151d010fbfea8aa63c72fc8da9c001da1b3525f78deb3f2b72939"
 },{
@@ -58,8 +57,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
+    "inspectionName": "SpellCheckingInspection"
   },
   "hash": "7107f0dc6c4f6ce7d9f28e66614f2700c9185852f48ceaf439bdb1d49eb3c931"
 },{
@@ -90,8 +88,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
+    "inspectionName": "SpellCheckingInspection"
   },
   "hash": "36709a08795349a54b9b8bd0af922f9e08bb5b8d1551128ed99795132dcf5406"
 },{
@@ -122,8 +119,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
+    "inspectionName": "SpellCheckingInspection"
   },
   "hash": "a86b349bfdebe742773865b514540d9e62e79a883de0a6dea5bc80c269727878"
 },{
@@ -154,8 +150,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
+    "inspectionName": "SpellCheckingInspection"
   },
   "hash": "0168339cd6dec558c96627c5e86ddb0928fe4a61fe4357c5c59aae318b2a535a"
 },{
@@ -173,11 +168,11 @@
       "type": "file",
       "path": ".github/workflows/qodana.yml",
       "language": "yaml",
-      "line": 25,
+      "line": 23,
       "offset": 15,
       "length": 9,
       "code": {
-        "startLine": 23,
+        "startLine": 21,
         "length": 9,
         "offset": 165,
         "surroundingCode": "        run: echo \"$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')\"\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
@@ -186,10 +181,9 @@
   ],
   "attributes": {
     "module": "Qodana__Sample",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
+    "inspectionName": "SpellCheckingInspection"
   },
-  "hash": "c3638540f8385d3de94925ff57ebe4f06e5d1a7f7d8902037683f059ea8c5107"
+  "hash": "a23dd45196f6090dc714a38637d54360c1534c49a1e4b66b2e4cb7cf15f71d6f"
 },{
   "tool": "Code Inspection",
   "category": "Proofreading",
@@ -218,8 +212,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
+    "inspectionName": "SpellCheckingInspection"
   },
   "hash": "bd379c03660a4d8fcf07b1f4441dc01e6bda27b330e7562f900cb93333cc8f13"
 },{
@@ -250,8 +243,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
+    "inspectionName": "SpellCheckingInspection"
   },
   "hash": "b24b30ac468173e371a3380dc3a4fdb7df6ac9194699b07e965478fd7a67b104"
 },{
@@ -282,8 +274,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "dd76bb57d4204deda8d6aed8a8bb176e543fa1fb7a7f8e2a58cd5d4fba23006b"
 },{
@@ -314,8 +305,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "ae6cffaaa4a99a357a1412e9bd45cb790ce2bfdc62e2221071924e287329f3b0"
 },{
@@ -346,8 +336,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "d845e498398c8bd11f07f76f83f6a673bd4b9c4ccd6bd2a8aaabbcccf52fd96b"
 },{
@@ -378,8 +367,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "852bd6316d45370f8fec8d83bacd35f85d87d7afc7210a1f49d291a97fe39f96"
 },{
@@ -410,8 +398,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "9c005cc0d597d690ce8e95d8ef7fce929d96c51bc5113c69bf8d1e14894db301"
 },{
@@ -442,8 +429,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "d3c44807df3f9192acba52cebf7d78dc9967baa96ab73b3ab61ce7951651f149"
 },{
@@ -474,8 +460,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "7e42307fbb130f8dc84b90a19e0e81f6a10cf493905ade565ae1d74c1bf1f166"
 },{
@@ -506,8 +491,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "eb3409d4380739059639a1d54587ba862e6bd3f57eecb42fcfd52cb5f0595026"
 },{
@@ -538,8 +522,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "0ec04e7ac20ccfa4bdc85fcb5ea46c3544a3d84c3b6c367aaf5a1983286bd2c0"
 },{
@@ -570,8 +553,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "15588844d5a656ed9e772a635f4f91aa4d085bdf00663fdaff7da4d509f9843c"
 },{
@@ -602,8 +584,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "c9bfbe514c5857be26397bb84d7012de1639358d9a5a5b28be078f4f14550dd8"
 },{
@@ -634,8 +615,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "f9940e4355c05058922ce4c406c12056f4b1c7c7fa6e0623eb8edae932e11e41"
 },{
@@ -666,8 +646,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "7d7dba421c4d4c3df0781c78da039901b963ed20916c2e84b7bd37066fec2243"
 },{
@@ -698,8 +677,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "6d1de89d82cc73962ea08b15e3f00d6d2a2a05e4c950159dee90c1033ac4d4e7"
 },{
@@ -730,8 +708,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "0c40eaef302efe183450129e73207f5b4528b52c3a3b64b1892715f077028d0c"
 },{
@@ -762,8 +739,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "680e9cef4eb995e56c86a7e6c79ffcaae23f86e0b31975050861ea83f3e7b334"
 },{
@@ -794,8 +770,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "7a825285c06cb14557ec2cb51635e9528d46a411c46d36fafb254cfe612eaeef"
 },{
@@ -826,8 +801,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "62c09ae19d10392aee2b1e12f1589805005bfb564007864bfd4473c91d1456fa"
 },{
@@ -858,8 +832,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample",
-    "inspectionName": "GroovyAssignabilityCheck",
-    "baselineState": "new"
+    "inspectionName": "GroovyAssignabilityCheck"
   },
   "hash": "25ad84636e1961824a4ef2624acfe5e41be2d013a7dbfce9da9c08a1ff708ea2"
 },{
@@ -890,8 +863,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "cab1e61b3eaa943f0acbcae76cbb2d95af46216022d6f0ad52abb98c40313102"
 },{
@@ -922,8 +894,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "dd78661c8b613dd8e211b23abd62c79cf31d96668672702626d57cffb10fab8d"
 },{
@@ -954,8 +925,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "a64b03b471fdf04eead2a9ea5fa549debd36e9e362e1d87ba278196351bf00d5"
 },{
@@ -986,8 +956,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "7877512aafe9d0ebc90ecbcd982fc1732bdc7a3bc74c01922d970d69e53d2fc8"
 },{
@@ -1018,8 +987,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "b7b5e0041a14072acd2f1d49ffc3fd6fbe3f4958dc21ccb2e469812d90dd9f8b"
 },{
@@ -1050,8 +1018,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "b4f87868093bd4f7347f70fdb130c463d9204df6154e2a7137596bfe7d17bcc2"
 },{
@@ -1082,8 +1049,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "c8d81f727d8e7e66bfde31c10685ab01a7ad8d481dcea9e0b20123d550804bb4"
 },{
@@ -1114,8 +1080,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "042006243a678fd0e26db834ee9c13e39cf2053a9b897f7064f762ddd97027ae"
 },{
@@ -1146,8 +1111,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "e0d00bcfda0bf3f33b959911a7b5c61f89cca2c52c0cf7fa672df085405ebcc4"
 },{
@@ -1178,8 +1142,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "d1bd6fc8771b15d51b79cb158ce570ccf85f0b6ef82bcfdd85d747e607ef05e0"
 },{
@@ -1210,8 +1173,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "7dfaa6514372d3533a14e40964befcf243a76c3d33013bde9d59b326cafa5f0a"
 },{
@@ -1242,8 +1204,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "1bbd7ccea1fc524200536347825b8e3088b179377ac8687b021e485d2de0500c"
 },{
@@ -1274,8 +1235,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "ac27f493a739584e69e25aa1097f160a41950010a2c2c9f466e50b2ce724b54d"
 },{
@@ -1306,8 +1266,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "a51459357da982f90c3ebae5cb53773341f372580783e7b6a4c8cbd5e4b3d16e"
 },{
@@ -1338,8 +1297,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "1a0daf9fbe8b77e06f963dc37c7add70e7e0b7486278a5d12c3cb5d3af9ee630"
 },{
@@ -1370,8 +1328,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "2bb2c2cea5c1839ff7a5bd3a3f962ec1a887661925df2fc5c9dd60cb7452576d"
 },{
@@ -1402,8 +1359,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "d28fd31c7939fc0850c05ec32c70af380a325515c6c35c3b2aa848b88acd9b1d"
 },{
@@ -1434,8 +1390,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "327fa941c054b4a3160aa263ba84879a4f6ef4e1ed109fe7cfa73ace474b9261"
 },{
@@ -1466,8 +1421,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "e724ab2fbbebe3b85fe46421f6670f5ee9d83b12fc36f09d19199b7d1e72dd46"
 },{
@@ -1498,8 +1452,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "417fab0177c0dd25cddef1ba970497b2b04a022b496af2f877a7f146b3044c4c"
 },{
@@ -1530,8 +1483,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "32d9103d7cca2b17d8e3c3481c6dca2c03398a0cd971b84a5474c59b6b91c636"
 },{
@@ -1562,8 +1514,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "c4b798a1ac8e2a0dd71afac8a47cf6d7e9109584ecaceb1fc193e1e65995126d"
 },{
@@ -1594,8 +1545,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "37c007ce12de9a3708d6543efcad178b4307c650ad0d0973926f77840550eec0"
 },{
@@ -1626,8 +1576,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "6b7919ec2daebc25c68d4fcc8d70f555b7b6b772204a1aed2729b3a873297998"
 },{
@@ -1658,8 +1607,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "993533696e5c2121c1a4f5bee46e7adbb0b02fc68e47764d6e9949e8da5fa8d2"
 },{
@@ -1690,8 +1638,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "b227ce7d791ead90fce9bcc243ca66239d48330f5868b9d872cf48066a4e005f"
 },{
@@ -1722,8 +1669,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "fe8a09476b4526f3f6bd0dc077c24828889cb625690e94108f2fbfe0bee3fc3d"
 },{
@@ -1754,8 +1700,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "483399f78abc62dbd5004de31143804bc5664c9a62ce039dc26e7eed827e18f4"
 },{
@@ -1786,8 +1731,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "c9cb1eb63de4e2fb52c47dffcc8c21cafcaf4af72e098764ac8e29d235981e5d"
 },{
@@ -1818,8 +1762,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "c57ab9cf21c650044319947939bfb51f8dd314a5ed0eda9fd129a1c4c6233cc6"
 },{
@@ -1850,8 +1793,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "0b8f132116b33c4b73f87ac60e8473ef62a37a7113f16b3892ef304ff998e51e"
 },{
@@ -1882,8 +1824,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "6dcd4342d86f92778005f940a3486a0a7554104a5e0f287eb3c9ac2577a19bae"
 },{
@@ -1914,8 +1855,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "732a7d8f048fcb7963ee6914cb79909e94ac57cb87474a852a3a8b8b903bb8f6"
 },{
@@ -1946,8 +1886,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "be1edb3d9ee3804c64ac068dc76fef2a3aedb0fb8ff21a1cb6e82097b21d8b0c"
 },{
@@ -1978,8 +1917,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "65cfd7f24a446ece5f403c118fe74b2e8c9aee933393f934921662397b2a9c7a"
 },{
@@ -2010,8 +1948,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "579d154af9b86a24fc9473c7c5c17f552cd8ce85bdae56951a73d41e778428b4"
 },{
@@ -2042,8 +1979,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "c370060092f71ce411cffa15e5957b3d249fd5cfc6b8bf896f74685745cdf161"
 },{
@@ -2074,8 +2010,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "56704231faeb08cce91eef168c215bf6dd7de17b45717d28402449299f31a867"
 },{
@@ -2106,8 +2041,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "27d8f85f944c6a378b6227d6d7bd34185ede4ad28821da1dfde2a3d31f4ccd6c"
 },{
@@ -2138,8 +2072,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "f4f552b9dc7c6909194b2559836700f0ff8701984e5f3b4b3db871c228d636e7"
 },{
@@ -2170,8 +2103,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "32fc629ebd432313a4b0d573d1ea4aa80568d09e81cfaf7d1371b8b382b6a9a3"
 },{
@@ -2202,8 +2134,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "1dc97e84fc4bcb9e30b49c83921c342b2e914895c64a473392e03e005be31672"
 },{
@@ -2234,8 +2165,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "6b6cd00289fdd8f32b2729ef91d7452494f1033502942cdcabf3f8a89316e00e"
 },{
@@ -2266,8 +2196,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "31aedbb46f991342b6350aa7cdfbdf191043144ac91193e7ee212abaee464ee8"
 },{
@@ -2298,8 +2227,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "0c661a0eeea51465fc1a52fa924b730410b7b8064dff6225d3a8dcf958a65a39"
 },{
@@ -2330,8 +2258,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "4252dddff4e9590bfd0ca48dcad67611cd480f0ed3032e4c31044df0a41f2420"
 },{
@@ -2362,8 +2289,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "932308feda1236d6aa4775519303640410b8e77ef9987902222a2fee9931d355"
 },{
@@ -2394,8 +2320,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "f77373cb6e3eeaaeadd15854e58dc2d31fa624de2f25b07721d64e2d07c81116"
 },{
@@ -2426,8 +2351,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "d39c7519bdedf09876b3e2c907f7d7ecc5ec84e64ed8ca6c84913b3e90c66506"
 },{
@@ -2458,8 +2382,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "0b6670e83964353d8b84a17c3bdb32e17a70223820c77a2d06cbb52c0c30b282"
 },{
@@ -2490,8 +2413,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "1f95a994d8b937ecb1754e4f2686d0adaf0be35227ddc68874a2a3afd651c82c"
 },{
@@ -2522,8 +2444,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "b65eb4a7908a53a28ba2c77bd5269ffd10fd6ebbe46aaa4ba9d6b6657127c4b3"
 },{
@@ -2554,8 +2475,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "e9d003b3d9723f31634ac3de15fa6fef6a51d9cd1e9abfd4ee3dbc7d041d1ae6"
 },{
@@ -2586,8 +2506,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "0033241f14e3b4450c46e645942b7f8b6d96c37774c37700890439444c0267cb"
 },{
@@ -2618,8 +2537,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "a8c49a5842b1f6b18842679c126e0973bdde7b33cce07c90d10af5159b52a94d"
 },{
@@ -2650,8 +2568,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "15e8225ec4371668436daecea6f3e003b405995eaaf5075368120d147a447ff5"
 },{
@@ -2682,8 +2599,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "963d5f022417e8f46900e120b1550fb9a27bae92bf2f4bca9d476f8c4aba7560"
 },{
@@ -2714,8 +2630,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "36b5bdfc83e190cfaf8f6b504c15b461db533d034ca16ed8dc32866ac93a3fc1"
 },{
@@ -2746,8 +2661,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "0a42f2b366144c78bf97fa734341f77e20f7dbc4845c3b5e07f82d2a4bea448c"
 },{
@@ -2778,8 +2692,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "9abda81bf3016896a0ba886201bc3781ae54ec1283be28b0739d369e853d8bef"
 },{
@@ -2810,8 +2723,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "306861f40fb8b966e5c78b25a30d18574a8545cdbfc8c0841883a87d291c6131"
 },{
@@ -2842,8 +2754,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "198d382d8b61555063179e1b7a8e1b868a7e42a234b19042ae096f9e4a3f224f"
 },{
@@ -2874,8 +2785,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "7bd966647d5f02067d03bbe5cd2a69d4dc3bbe4d7f3a523d7d85174565ebb6cf"
 },{
@@ -2906,8 +2816,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "8447525268aec254513b8f2cbe018e41e4b567e670a30bf559eb83a934352f76"
 },{
@@ -2938,8 +2847,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "81564989480cd0282462355e99f17584303a27219b1e24ba343ac4e8ace13c95"
 },{
@@ -2970,8 +2878,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "89ff929157a27059ec04c02d3167b1db55f0d696ba278b34105d7f8f0446e3a0"
 },{
@@ -3002,8 +2909,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "8fa500f8fc011b38c6dc6c713a206a34ea2d780869f78ffc811a817db5d343f4"
 },{
@@ -3034,8 +2940,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "43963797674567756fb37e7049e1c00006b908e0778760b8e49ecb151d7926cf"
 },{
@@ -3066,8 +2971,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "e32fcf3e906f4881b77ea0537d9fb1fe4e06acd8a45f234e686aa12f7dad76b6"
 },{
@@ -3098,8 +3002,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "fdd88b95f8ffbff4d1dc6ff11ff46fae09c4713d03ab8e1511de4d9534c1cf03"
 },{
@@ -3130,8 +3033,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "cd77c67718f9dc1238b5106b53da485eedbe51a09db0788f4a9165d56d1a1720"
 },{
@@ -3162,8 +3064,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "734c696c97a1741434163abf733e186ee641ab015ef424a43b26fbbac044c1a3"
 },{
@@ -3194,8 +3095,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "92b079a596881bcf106af5d1cdb8c0ad36b183af4c272ec1da459cf46d6666e0"
 },{
@@ -3226,8 +3126,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "68009cdade4c998aedd3d153f68d53213b64fa1df04ec69ffe0896ec72997482"
 },{
@@ -3258,8 +3157,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "120528a4bab313f9604b1e3b0df468258484050ccd4aee53f277d31da35ac436"
 },{
@@ -3290,8 +3188,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "5d5400765703ff3b8a5ee4f8754bd32cd4c3616c29975e706938b322fe462db9"
 },{
@@ -3322,8 +3219,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "fc847d80243e7818c0762b6d258c6be8e2eb0cd7ceb92524b7419cc9c6423854"
 },{
@@ -3354,8 +3250,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "474fe886d4c60bff666e135e49308c64cc8d240bcc3c5d216ef7ca8b870150f4"
 },{
@@ -3386,8 +3281,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "dd6656a0ef9d5c3a85fc734ddfbfe89bd8e2744610f94793618ea10a7e7bd63e"
 },{
@@ -3418,8 +3312,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "9424ed88060ced8f2c3faae2a70e35b2bc97a4a7319fda4091f014ea00d3d89c"
 },{
@@ -3450,8 +3343,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "a074e8b1ac818dbb380e6ba8dfdd5307f31ea3c6b518c3d24e3464cde2db08ed"
 },{
@@ -3482,8 +3374,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "8e8a3b4399891188c1fec522238beabaa15579f9af1ac9b0062353874f3d36a9"
 },{
@@ -3514,8 +3405,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "7446ea2f2d3f77368f4cc92eb00d2e29f8eccdf037da69be97b36fc07dbfc52c"
 },{
@@ -3546,8 +3436,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "600a18d614554de8557dd2963adc034f94772aee85b6b348fd26a357425b3cd2"
 },{
@@ -3578,8 +3467,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "a3b9a5d16c99e2b83f4e3dee790749a96c8a9efc089c5e3630900b76643457b4"
 },{
@@ -3610,8 +3498,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "d155575dea34d19dab8166dceccb99c0650441e3e528b8eae9d7ac622b1d39b0"
 },{
@@ -3642,8 +3529,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "ceb8b0cee88eb12f8738334ef2a753c4c49f0979f9f92c0008eb91f5ea346b46"
 },{
@@ -3674,8 +3560,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "bed1714573402f1aaaaca3a296d53eee71a4b6d6433fecb816416c01397594c1"
 },{
@@ -3706,8 +3591,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "1dc523d4d90bea81e6dfbab143bc44f30ed841500b64be12269c0e3361fa89e4"
 },{
@@ -3738,8 +3622,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "abe8538b247158d0b44cad25f00d47ba57b2c47acc73f5aa3f2f2111bc52daaa"
 },{
@@ -3770,8 +3653,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "28e07cbafef2f475c715b81fca2967b37ad5bffeaea216a72570275d7aa93ca0"
 },{
@@ -3802,8 +3684,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "1d158439217338e4d5914886a8f0f1e0b6818af3bfabb3dcf67a1625c9aca4d7"
 },{
@@ -3834,8 +3715,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "95f7001347a9c33d3cb3bb528b5bab55955c0fc4482718be9b4e2160860bc556"
 },{
@@ -3866,8 +3746,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "c664593553f1e71df54be3411d9b491007e2fb9e85b52b36ac7d26bb1670a7d6"
 },{
@@ -3898,8 +3777,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "111d2004fd0cb2c24da71869331ae511a8684a1242c0d99924fbe825cdf97704"
 },{
@@ -3930,8 +3808,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "6b62f5d0e1cbe4ce67f9e975b2ea2f2d434bc96d16d1648e051bef446d63c48f"
 },{
@@ -3962,8 +3839,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "ceacd0a3968f62a03d981897a40d0cbc68d718583ec8b28dc37cca16aa57207f"
 },{
@@ -3994,8 +3870,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "056f2e084262a49209e5a347e3b8d432f4242db9009b078c04c5879b02cb4796"
 },{
@@ -4026,8 +3901,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "8c4166edec94f560e937890ae79a8d26c5c888c56645219ebd4f9330b7f92acb"
 },{
@@ -4058,8 +3932,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "bf8375c43ba3015437c1de7800b0acb22e6f0f61471a833e289c28f1e0debaef"
 },{
@@ -4090,8 +3963,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "7225e95b427211600d02a57dbad336e2197095716d70c547667e6e093924d1d6"
 },{
@@ -4122,8 +3994,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "d179fa9b02935de8380be6664d7a253c176c82ecf0702c11dad96d4e9e65f2a7"
 },{
@@ -4154,8 +4025,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "dd96e924cf6654502b5d27825768e25c9989ee61691ac7399fff853f21cdb18a"
 },{
@@ -4186,8 +4056,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "f3541aef9de79c5d36f4cb6a576ef822e7382a0f431c50da104f895906657b4e"
 },{
@@ -4218,8 +4087,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "a8abeef9d923a664e07c474c5ada1c58368ec110a556b595969de31b58a51e5e"
 },{
@@ -4250,8 +4118,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "5583ac985164161bdba72f6267de25a9edc1735411d30dcd31c4ff7c545086bb"
 },{
@@ -4282,8 +4149,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "2a20e891536aa4c5c23da2167d3d2decf7b764fad42e27ec14062a1b84290b5b"
 },{
@@ -4314,8 +4180,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "124970b62a2ea183ee0fd62bbc86b7a1490f8cc0387ece9ffb6c44cde8f52318"
 },{
@@ -4346,8 +4211,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "98981abc6f9492a0e8ab0308f438a4134fa7e6e7b99c6da9a2c1fce6c529ba3d"
 },{
@@ -4378,8 +4242,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "31eab216f7bb440be99a7a345f8e411ebbbd6c85307b2fee4f0f137968bd153d"
 },{
@@ -4410,8 +4273,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "cb1611bee3f9e0c839be3dd425e279e9225b2d571a0ff2b197cf46074978a3df"
 },{
@@ -4442,8 +4304,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "385c1c46a0b7e2c4cee492b1c238effbd62fe2de22c6f5a5fb3eaaa10b71a621"
 },{
@@ -4474,8 +4335,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "ae778084ff248977a6c512344c0aa34b399d2a3d824d6cbcfca71304b7ae44e7"
 },{
@@ -4506,8 +4366,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "30305ea1308902f8a42d77caa25c6d603ddcbce333857a3e4c80d583c6ec4c56"
 },{
@@ -4538,8 +4397,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "446c19e8555880f7d7f903f30d46d3c99f002eef7de69c56496da2ac4b815833"
 },{
@@ -4570,8 +4428,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "97d169109223d26c6c665b7eefa3b20fe7e651bb9887375b821902d8b05e0e9e"
 },{
@@ -4602,8 +4459,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "ad42ffbcf584d02221afa641bc083d3511a1425c302dc94684c2e07c9b008089"
 },{
@@ -4634,8 +4490,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "cbdcc1e6e28203443d16448d01bafab70ed7d2fe3a320858a9d239cf87f37a4e"
 },{
@@ -4666,8 +4521,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "86bc286dcf9a6bf319d9feb9650433d2943bf09b2d9f623dbddc60c227485cfa"
 },{
@@ -4698,8 +4552,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "743c00aff73168003cce809079b7e5aafa91a7e721374195f140b62748b90e84"
 },{
@@ -4730,8 +4583,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "23e49077c3bf11339041620c428ffb14e77c7e9a038c964d59a191f8455575d1"
 },{
@@ -4762,8 +4614,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "61853f9b778e704c415a9c5efd354731854b5b7bd9e7a97e2d1b98f8e102a7d6"
 },{
@@ -4794,8 +4645,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "6d0cd0cd421e5aaae9e8534760e64df23828f761605d4cc530b3fffbf7943f26"
 },{
@@ -4826,8 +4676,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "a4b63eecbf3506920bc0ebd36897d7e174a5b66139ac63381be2c1b14ffb447e"
 },{
@@ -4858,8 +4707,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "aa61ff94f175abb2218897794eb894e7af4a3e3c7d3ba86b17809d83966fc490"
 },{
@@ -4890,8 +4738,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "d4b5e14a9dbc8a0877321ae8d3a178e2ab1c85fc998125e28b9a553400c0e5f9"
 },{
@@ -4922,8 +4769,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "e0efd7f2780988bc25ee8e418db4ee956d70912e3f4ea347692a1f3033ca9cd2"
 },{
@@ -4954,8 +4800,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "771e85ebd56861d288af61f0979dc4cfd099ec68ec824cd51bccbd9cce7e144b"
 },{
@@ -4986,8 +4831,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "41f1ff05e6acbeb897753fc6784e7e3e932f754d5e4370c341eda73e83aec125"
 },{
@@ -5018,8 +4862,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "4e491051800125e8c96b477cc4a95e17262b23bef5e6c15e9b0538e165a2467c"
 },{
@@ -5050,8 +4893,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "44c2f0487b8ee966df89091bf0f902b48bc26152335b4553a7d0b7295e135053"
 },{
@@ -5082,8 +4924,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "57fb3a54a67c8ea4293aaa4accf0ebee8ccaf05965f89087ffb2e7094abf949a"
 },{
@@ -5114,8 +4955,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "abb3a5cd5c4f7e924215c9f4d8a67e6d2c5fae539e7f3bc13a321f6ba241c240"
 },{
@@ -5146,8 +4986,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "fa62d53d646bd2172d8c3398f5209204548af404a68e5d4f25c8be89100d42c0"
 },{
@@ -5178,8 +5017,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "12e8618797a582d77eb9e7737dc14fffc0806f6e6b4220b49aad88199c0b0397"
 },{
@@ -5210,8 +5048,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "4826ba5459af3325440ae1dc6e6655f0a0b5751d0f9755b696efce9d1031e37d"
 },{
@@ -5242,8 +5079,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "efca119f2e49875afc32d67036beff02a041c32a34fa7ad81343b75313587c56"
 },{
@@ -5274,8 +5110,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "1de0cc7217b307677797fbe6b2db24ec8ca08f5694abf063529b27b24e61e7a0"
 },{
@@ -5306,8 +5141,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "60e12c129b0604ef8f71af719939d5d036413c153286b745bd91973cf3554808"
 },{
@@ -5338,8 +5172,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "e037863327fc159047032d9a061c7b8bcdde69207a2ad795d5723c537a0b79d9"
 },{
@@ -5370,8 +5203,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "337a6a8d0bd8371e91854f2ede1b30c9abe96c7caf3b71baffa3c68ce2a01ce9"
 },{
@@ -5402,8 +5234,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "1040ce9f1bf0619887794c54f25b08181bfeccb784dfd3035df195d20595faf9"
 },{
@@ -5434,8 +5265,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "96a3eae6e6ebb349f6666a6ce0f4520e81f033e642534233105049d1930a8700"
 },{
@@ -5466,8 +5296,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "27be28ad91be28c0d00370b12c8184658d6300bce43d2f127c395530213140ce"
 },{
@@ -5498,8 +5327,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "1231386692ffeda32446bee25ebbffa38d49565f931295fc278bb59d04b2665b"
 },{
@@ -5530,8 +5358,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "268603f44d59c0e9b1b22d745d0ae42a1059a9807fa5bbbc6a6ffb97bdd2a6b5"
 },{
@@ -5562,8 +5389,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "53e0bd0e8b0058149e397f2b57f4d86779f2924ef6eabfd3a68ff5a91be3f38c"
 },{
@@ -5594,8 +5420,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "3905ec61a1c18e06348b6792f7d940701f2b047b68f5799e5b69bbf2206a4150"
 },{
@@ -5626,8 +5451,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "dc20c25a00faad986d82c02fa0c0a7ce95c870bb24a0c5a9e84d5834ca0ecc05"
 },{
@@ -5658,8 +5482,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "9d84258b2de9ab9c759a7348caadab8f973032b5df842d240069b3d44cdaf68b"
 },{
@@ -5690,42 +5513,9 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnknownAttribute",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnknownAttribute"
   },
   "hash": "b8a3098d1a2dc4cec5055c07614ea2faeac706a22acbb7088328467e41000a1e"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant nullable return type",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
-  "comment": "'greeting' always returns non-null type",
-  "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 20,
-      "offset": 39,
-      "length": 1,
-      "code": {
-        "startLine": 18,
-        "length": 1,
-        "offset": 45,
-        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n}"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "RedundantNullableReturnType",
-    "baselineState": "new"
-  },
-  "hash": "ca88537fe28e43470a2a19e6d76944888479edd828c9d098246f3141c1cad9b8"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -5754,10 +5544,40 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "RedundantNullableReturnType",
-    "baselineState": "new"
+    "inspectionName": "RedundantNullableReturnType"
   },
   "hash": "4c9303d7db0c4ad12dce7c258bfcb400e90d48c10edb491cf5ea6fc415b59660"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant nullable return type",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "'greeting' always returns non-null type",
+  "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 20,
+      "offset": 39,
+      "length": 1,
+      "code": {
+        "startLine": 18,
+        "length": 1,
+        "offset": 45,
+        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "RedundantNullableReturnType"
+  },
+  "hash": "ca88537fe28e43470a2a19e6d76944888479edd828c9d098246f3141c1cad9b8"
 },{
   "tool": "Code Inspection",
   "category": "Android",
@@ -5786,8 +5606,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnresolvableTag",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnresolvableTag"
   },
   "hash": "744c399c87cacb8033d65294382eb0adc49bf177ec8be599171665fb8782e2f8"
 },{
@@ -5818,8 +5637,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidUnresolvableTag",
-    "baselineState": "new"
+    "inspectionName": "AndroidUnresolvableTag"
   },
   "hash": "9bd676dbf210479c53be762d15e359d726fd37815ca9204e2ef0a7f2e3b1f856"
 },{
@@ -5850,8 +5668,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "0b106119d60a2763da8b0f95d1544e87dc521b05f26e4aec5dbec13d6affcc04"
 },{
@@ -5882,8 +5699,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "96b462d80800ada5393e17f39f6a807c5ea28b6213eee8c4fb8b965aa0f43a6e"
 },{
@@ -5914,8 +5730,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "0a867bbdfb43de88847b8996686d8ed149c30f13b183a6d8aea0eb362fa20fba"
 },{
@@ -5946,8 +5761,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "196ec0cf078b0689489814484ea88a8da860470a84223529524dbff681f32110"
 },{
@@ -5978,8 +5792,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "7bb27f7cd7be1e086c7d495a10b9c0271d735186fd4713f938cf3d02e7b1dce3"
 },{
@@ -6010,8 +5823,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "94d4a40ad3b09222c6e0f286c73816e942c4810ba0cf62272c9af6a0bc04f637"
 },{
@@ -6042,8 +5854,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "e017a7ce5510d7ef0215a24479368ab2542c2060a504ecf1b80f0011ab18ef05"
 },{
@@ -6074,8 +5885,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "e7bb27acc190461024d95b5b3082096db8451652704e2685c2dd751933bdea7d"
 },{
@@ -6106,8 +5916,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "03dda45fdb8c2497d61b55cbbed0c0cc6fdea096584e0cda79936058baf22ca1"
 },{
@@ -6138,8 +5947,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "a5fb64402b4ad287178c480076249dcbb91f37736f505b99c390d224e1309a59"
 },{
@@ -6170,8 +5978,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "01df2f54639c98c8d82e22afa50e42d6da2f4b22e78c5c2c27d446588bc67006"
 },{
@@ -6202,8 +6009,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "9872a75ae0684583a33c6b9225d435bb575965cd50ba391fcd6a928f10f873c1"
 },{
@@ -6234,8 +6040,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "27a314fb26a12a01e80090ccf0787c9f02b444819de58f03776e4dde47da57da"
 },{
@@ -6266,8 +6071,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "c7a41a951c203611a2c689bd55f41ffcd280cb4684b601e6af6d1a62bc305bb2"
 },{
@@ -6298,8 +6102,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "30fcf042debf3d23703e442ebd40ec1a8d064e508a0e78ef77426397be3017ec"
 },{
@@ -6330,8 +6133,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "c076853ced0092aa3526972000e390a1df19400209fe386a1ae85f83e0cf9118"
 },{
@@ -6362,8 +6164,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "13a04df68197dc61c92b6155a130c37bc7d8d92286e7597604c7ef995125bb3c"
 },{
@@ -6394,8 +6195,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "e5ee12b0b3bcf8fbc9bf081e8f24a935650599a2856284a0bf7c451b066a6be5"
 },{
@@ -6426,8 +6226,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "0013c2101c351aa815a372b71e63c2f319b52116244878a49c53b24f90c50cfe"
 },{
@@ -6458,8 +6257,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "f92ef7ad3bf100578c644fd143c86c9d6a079a2b776875fce7f6556e0bdd9575"
 },{
@@ -6490,8 +6288,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "3b220752b87c5ea3454a916e4258af9a4bf2fb048dfcee338365040b92034962"
 },{
@@ -6522,8 +6319,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "ad2fdbadcb81323ad1f1164865c45e9d29322ec4e6342dd3a2afc8ecd6f34304"
 },{
@@ -6554,8 +6350,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidDomInspection",
-    "baselineState": "new"
+    "inspectionName": "AndroidDomInspection"
   },
   "hash": "a341db2255bfdf8c3dd1285026a4701e6fc4923892cf7ca6d5baee0d5f6bb5d3"
 },{
@@ -6586,8 +6381,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "SimpleRedundantLet",
-    "baselineState": "new"
+    "inspectionName": "SimpleRedundantLet"
   },
   "hash": "6241d2c5cf57eeb5e0530bbb284874b9779adc82acc90e96fc2ea24fe97e773d"
 },{
@@ -6618,8 +6412,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "XmlUnusedNamespaceDeclaration",
-    "baselineState": "new"
+    "inspectionName": "XmlUnusedNamespaceDeclaration"
   },
   "hash": "c31d8733c9c93e79eef8e2ea95e452c2706ea3e9d364bd43c419273e704c8f91"
 },{
@@ -6650,8 +6443,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "XmlUnusedNamespaceDeclaration",
-    "baselineState": "new"
+    "inspectionName": "XmlUnusedNamespaceDeclaration"
   },
   "hash": "f188d3ba505e988ed2dfb9ec3eed32a27af40a3e381d6348bf23c2ff64283147"
 },{
@@ -6682,8 +6474,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "DependencyNotationArgument",
-    "baselineState": "new"
+    "inspectionName": "DependencyNotationArgument"
   },
   "hash": "59c3fb2674871f7bc54b036d055e071633232a851c4d7fe26cdc43339b330638"
 },{
@@ -6714,8 +6505,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "DependencyNotationArgument",
-    "baselineState": "new"
+    "inspectionName": "DependencyNotationArgument"
   },
   "hash": "cf577d93ce13b2fb9d977eb0a85a8ee6065f3731aeea16ae7ccfd4b3a05ad934"
 },{
@@ -6746,8 +6536,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "DependencyNotationArgument",
-    "baselineState": "new"
+    "inspectionName": "DependencyNotationArgument"
   },
   "hash": "702bafdaa922cd5364ad01cebe0052a8e7826eeb863785bbf8ba7f52fc02f419"
 },{
@@ -6778,8 +6567,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "DependencyNotationArgument",
-    "baselineState": "new"
+    "inspectionName": "DependencyNotationArgument"
   },
   "hash": "016fbec8b530f6bff489a337b712e77bb7dd719b9e75f84f7a0ac384441e2444"
 },{
@@ -6810,8 +6598,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "DependencyNotationArgument",
-    "baselineState": "new"
+    "inspectionName": "DependencyNotationArgument"
   },
   "hash": "efe907add956abe07c79a9caf2de1ed1bf9a811d690c61969f50f11bceebe624"
 },{
@@ -6842,8 +6629,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "DependencyNotationArgument",
-    "baselineState": "new"
+    "inspectionName": "DependencyNotationArgument"
   },
   "hash": "ca7427a62b8cfb3a865f8b071b789f0e36bf4355e871fca9563e632ab70a509a"
 },{
@@ -6874,8 +6660,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "DependencyNotationArgument",
-    "baselineState": "new"
+    "inspectionName": "DependencyNotationArgument"
   },
   "hash": "7622d7ba1dd474acbad4fcbbf248dd7faa2834ceb967c53c4663bc26c4c735c6"
 },{
@@ -6906,8 +6691,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "SimplifiableCallChain",
-    "baselineState": "new"
+    "inspectionName": "SimplifiableCallChain"
   },
   "hash": "700fccc9e3a939d35c7359b21fa3bb4b63f9f79ec48046894e8809e31ffe6bae"
 },{
@@ -6938,8 +6722,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "AndroidElementNotAllowed",
-    "baselineState": "new"
+    "inspectionName": "AndroidElementNotAllowed"
   },
   "hash": "a063c6f32e76794b2960932929cf76a69de54098d8e634a3a78f421d3fa556ed"
 },{
@@ -6970,8 +6753,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "KotlinUnusedImport",
-    "baselineState": "new"
+    "inspectionName": "KotlinUnusedImport"
   },
   "hash": "ad51c116bce45e248fb66e7df069d8a3be489a79ccfb63b65180a41855cccc61"
 },{
@@ -6999,8 +6781,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.androidTest",
-    "inspectionName": "UnnecessaryModuleDependencyInspection",
-    "baselineState": "new"
+    "inspectionName": "UnnecessaryModuleDependencyInspection"
   },
   "hash": "dd4dc0655d262e0369cbc135eca9d2f9c5d2c5cd7e45c6d7d87e69eb86385914"
 },{
@@ -7028,8 +6809,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.unitTest",
-    "inspectionName": "UnnecessaryModuleDependencyInspection",
-    "baselineState": "new"
+    "inspectionName": "UnnecessaryModuleDependencyInspection"
   },
   "hash": "89475afca9a7768eda143d1ae16b1ccfeb85393810d0cb94ccb629610749122b"
 },{
@@ -7060,8 +6840,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app",
-    "inspectionName": "GrUnresolvedAccess",
-    "baselineState": "new"
+    "inspectionName": "GrUnresolvedAccess"
   },
   "hash": "0e67a39ada80bf912562eb1aa80c9785cf50fb82578544b12a883850ced6f7e1"
 },{
@@ -7092,106 +6871,9 @@
   ],
   "attributes": {
     "module": "Qodana__Sample",
-    "inspectionName": "GrUnresolvedAccess",
-    "baselineState": "new"
+    "inspectionName": "GrUnresolvedAccess"
   },
   "hash": "5984519b96be968c3ca5ce33f4729d572b0bb312498b01da6f86ffac3cb47ed6"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
-  "comment": "Function \"test\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 14,
-      "offset": 9,
-      "length": 4,
-      "code": {
-        "startLine": 12,
-        "length": 4,
-        "offset": 15,
-        "surroundingCode": "    }\n\n    fun test(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
-  },
-  "hash": "16756fa526673ceec02ed070f17223bec8c822ba104b3e0967714d6dbe5a5614"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
-  "comment": "Class \"MainActivity\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 7,
-      "offset": 7,
-      "length": 12,
-      "code": {
-        "startLine": 5,
-        "length": 12,
-        "offset": 31,
-        "surroundingCode": "import android.util.Log\n\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
-  },
-  "hash": "01e5a999148bc2d79c78e41c0e0ea8e89637ba1b16d7799550a027024a2c5730"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
-  "comment": "Function \"greeting\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 20,
-      "offset": 9,
-      "length": 8,
-      "code": {
-        "startLine": 18,
-        "length": 8,
-        "offset": 15,
-        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n}"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
-  },
-  "hash": "ae0d24c7dfe18a066109607be65d7898c24d7b764dfe3fa2721f0868d7fb1a8e"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -7220,8 +6902,7 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
+    "inspectionName": "UnusedSymbol"
   },
   "hash": "54c85073bfa9662d6e172fcbc761c8989013cd3ff8aa1163b716b9da8607c8e9"
 },{
@@ -7252,8 +6933,100 @@
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
+    "inspectionName": "UnusedSymbol"
   },
   "hash": "6bc6d5264eb7051348fb3343d882963aa24414fa987297ebd3f85d1fa837079d"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"greeting\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 20,
+      "offset": 9,
+      "length": 8,
+      "code": {
+        "startLine": 18,
+        "length": 8,
+        "offset": 15,
+        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "ae0d24c7dfe18a066109607be65d7898c24d7b764dfe3fa2721f0868d7fb1a8e"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Class \"MainActivity\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 7,
+      "offset": 7,
+      "length": 12,
+      "code": {
+        "startLine": 5,
+        "length": 12,
+        "offset": 31,
+        "surroundingCode": "import android.util.Log\n\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "01e5a999148bc2d79c78e41c0e0ea8e89637ba1b16d7799550a027024a2c5730"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"test\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 14,
+      "offset": 9,
+      "length": 4,
+      "code": {
+        "startLine": 12,
+        "length": 4,
+        "offset": 15,
+        "surroundingCode": "    }\n\n    fun test(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "16756fa526673ceec02ed070f17223bec8c822ba104b3e0967714d6dbe5a5614"
 }]}
