@@ -179,8 +179,8 @@
       "code": {
         "startLine": 25,
         "length": 9,
-        "offset": 165,
-        "surroundingCode": "        run: echo \"$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')\"\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
+        "offset": 104,
+        "surroundingCode": "             echo \"$MESSAGE\" >> $GITHUB_STEP_SUMMARY\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
       }
     }
   ],
@@ -189,7 +189,7 @@
     "inspectionName": "SpellCheckingInspection",
     "baselineState": "new"
   },
-  "hash": "1c8faefd36f60d2f7aea461c24f945e88c9e10ee21f07511d108246f1fa2e3ce"
+  "hash": "c9893e1fee48183ea41391f46dcfbc375406105c5241683b66c24e4c81f93b57"
 },{
   "tool": "Code Inspection",
   "category": "Proofreading",
@@ -7104,21 +7104,21 @@
     "kotlin"
   ],
   "severity": "High",
-  "comment": "Function \"greeting\" is never used",
+  "comment": "Class \"MainActivity\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 20,
-      "offset": 9,
-      "length": 8,
+      "line": 7,
+      "offset": 7,
+      "length": 12,
       "code": {
-        "startLine": 18,
-        "length": 8,
-        "offset": 15,
-        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n}"
+        "startLine": 5,
+        "length": 12,
+        "offset": 31,
+        "surroundingCode": "import android.util.Log\n\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {"
       }
     }
   ],
@@ -7127,7 +7127,7 @@
     "inspectionName": "UnusedSymbol",
     "baselineState": "new"
   },
-  "hash": "ae0d24c7dfe18a066109607be65d7898c24d7b764dfe3fa2721f0868d7fb1a8e"
+  "hash": "01e5a999148bc2d79c78e41c0e0ea8e89637ba1b16d7799550a027024a2c5730"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -7168,70 +7168,6 @@
     "kotlin"
   ],
   "severity": "High",
-  "comment": "Property \"unneccesarry\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 8,
-      "offset": 9,
-      "length": 12,
-      "code": {
-        "startLine": 6,
-        "length": 12,
-        "offset": 52,
-        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
-  },
-  "hash": "6bc6d5264eb7051348fb3343d882963aa24414fa987297ebd3f85d1fa837079d"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
-  "comment": "Class \"MainActivity\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 7,
-      "offset": 7,
-      "length": 12,
-      "code": {
-        "startLine": 5,
-        "length": 12,
-        "offset": 31,
-        "surroundingCode": "import android.util.Log\n\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
-  },
-  "hash": "01e5a999148bc2d79c78e41c0e0ea8e89637ba1b16d7799550a027024a2c5730"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
   "comment": "Function \"main\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
@@ -7256,4 +7192,68 @@
     "baselineState": "new"
   },
   "hash": "54c85073bfa9662d6e172fcbc761c8989013cd3ff8aa1163b716b9da8607c8e9"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"greeting\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 20,
+      "offset": 9,
+      "length": 8,
+      "code": {
+        "startLine": 18,
+        "length": 8,
+        "offset": 15,
+        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "baselineState": "new"
+  },
+  "hash": "ae0d24c7dfe18a066109607be65d7898c24d7b764dfe3fa2721f0868d7fb1a8e"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Property \"unneccesarry\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 8,
+      "offset": 9,
+      "length": 12,
+      "code": {
+        "startLine": 6,
+        "length": 12,
+        "offset": 52,
+        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "baselineState": "new"
+  },
+  "hash": "6bc6d5264eb7051348fb3343d882963aa24414fa987297ebd3f85d1fa837079d"
 }]}
