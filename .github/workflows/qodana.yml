@@ -22,7 +22,6 @@ jobs:
       - name: Get Qodana Result
         id: parse_json
         run: echo "$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')"
-             echo "$MESSAGE" >> $GITHUB_STEP_SUMMARY
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
