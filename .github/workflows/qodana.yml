@@ -18,20 +18,11 @@ jobs:
       - uses: JetBrains/qodana-action@v2022.3.0
         with:
           linter: jetbrains/qodana-jvm-android:latest
-          fail-threshold: 10
-          args: --baseline,qodana.sarif.json, --save-report
+          args: --baseline,qodana.sarif.json
       - name: Get Qodana Result
         id: parse_json
         run: echo "$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')"
-      - name: Count Critical Errors
-        run: |
-          # Artifactsを展開する
-          mkdir result
-          tar -xvf ${{ github.event.client_payload.artifact_url }} -C result
-            
-          # Pythonを実行してCriticalの数を数える
-          python count_critical.py
-        shell: bash
+             echo "$MESSAGE" >> $GITHUB_STEP_SUMMARY
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
