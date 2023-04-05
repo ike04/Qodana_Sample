@@ -75,6 +75,68 @@
       "type": "file",
       "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
       "language": "kotlin",
+      "line": 16,
+      "offset": 2,
+      "length": 7,
+      "code": {
+        "startLine": 14,
+        "length": 7,
+        "offset": 73,
+        "surroundingCode": " * See [testing documentation](http://d.android.com/tools/testing).\n */\n@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "7c992dab9550517c7025d61fbb193a9e75c3bd28df5367106f321bdf4b7e59b3"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Type mismatch: inferred type is KClass but Class was expected",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "language": "kotlin",
+      "line": 16,
+      "offset": 10,
+      "length": 13,
+      "code": {
+        "startLine": 14,
+        "length": 13,
+        "offset": 81,
+        "surroundingCode": " * See [testing documentation](http://d.android.com/tools/testing).\n */\n@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "e5724150f8837c5b72dd9646df63888d37245517fb6b286d0d9d41ebc3a0eedd"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access class 'java.lang.Class'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "language": "kotlin",
       "line": 18,
       "offset": 6,
       "length": 4,
@@ -122,68 +184,6 @@
     "inspectionName": "KotlinAnnotator"
   },
   "hash": "65c2cb3c6d34a5ec0ff22f7760474f1512adf9fbc49edf753e98d2d85246c128"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Cannot access class 'android.app.Instrumentation'. Check your module classpath for missing or conflicting dependencies",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
-      "language": "kotlin",
-      "line": 21,
-      "offset": 50,
-      "length": 18,
-      "code": {
-        "startLine": 19,
-        "length": 18,
-        "offset": 117,
-        "surroundingCode": "    fun useAppContext() {\n        // Context of the app under test.\n        val appContext = InstrumentationRegistry.getInstrumentation().targetContext\n        assertEquals(\"com.example.qodana_sample\", appContext.packageName)\n    }"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.androidTest",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "f22c52b7339aa9d49debeb21bccbb4297263d407e557efa217900612bb36dcba"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: targetContext",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
-      "language": "kotlin",
-      "line": 21,
-      "offset": 71,
-      "length": 13,
-      "code": {
-        "startLine": 19,
-        "length": 13,
-        "offset": 138,
-        "surroundingCode": "    fun useAppContext() {\n        // Context of the app under test.\n        val appContext = InstrumentationRegistry.getInstrumentation().targetContext\n        assertEquals(\"com.example.qodana_sample\", appContext.packageName)\n    }"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.androidTest",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "029bcb767ec1fdbb59d6addfb70de501e853e5c89dcad15c4b531f6113165dc6"
 },{
   "tool": "Code Inspection",
   "category": "General",
