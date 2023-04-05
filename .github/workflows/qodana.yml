@@ -35,4 +35,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Output2
-        run: echo "${{needs.build.parse_json.outputs.TOTAL}} counts"
+        run: echo "${{needs.build.outputs.TOTAL}} counts"
