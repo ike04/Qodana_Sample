@@ -168,14 +168,14 @@
       "type": "file",
       "path": ".github/workflows/qodana.yml",
       "language": "yaml",
-      "line": 23,
+      "line": 25,
       "offset": 15,
       "length": 9,
       "code": {
-        "startLine": 21,
+        "startLine": 23,
         "length": 9,
-        "offset": 165,
-        "surroundingCode": "        run: echo \"$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')\"\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
+        "offset": 97,
+        "surroundingCode": "        run: echo ${{steps.parse_json.total}}\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
       }
     }
   ],
@@ -183,7 +183,7 @@
     "module": "Qodana__Sample",
     "inspectionName": "SpellCheckingInspection"
   },
-  "hash": "a23dd45196f6090dc714a38637d54360c1534c49a1e4b66b2e4cb7cf15f71d6f"
+  "hash": "b5ca06337c6d904aa0ec8a3407e37462acaab9324731ae1f909e906a5f172ae8"
 },{
   "tool": "Code Inspection",
   "category": "Proofreading",
@@ -5524,37 +5524,6 @@
     "kotlin"
   ],
   "severity": "High",
-  "comment": "'unneccesarry' is always non-null type",
-  "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 8,
-      "offset": 26,
-      "length": 1,
-      "code": {
-        "startLine": 6,
-        "length": 1,
-        "offset": 69,
-        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "RedundantNullableReturnType"
-  },
-  "hash": "4c9303d7db0c4ad12dce7c258bfcb400e90d48c10edb491cf5ea6fc415b59660"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant nullable return type",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
   "comment": "'greeting' always returns non-null type",
   "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
   "sources": [
@@ -5578,6 +5547,37 @@
     "inspectionName": "RedundantNullableReturnType"
   },
   "hash": "ca88537fe28e43470a2a19e6d76944888479edd828c9d098246f3141c1cad9b8"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant nullable return type",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "'unneccesarry' is always non-null type",
+  "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 8,
+      "offset": 26,
+      "length": 1,
+      "code": {
+        "startLine": 6,
+        "length": 1,
+        "offset": 69,
+        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "RedundantNullableReturnType"
+  },
+  "hash": "4c9303d7db0c4ad12dce7c258bfcb400e90d48c10edb491cf5ea6fc415b59660"
 },{
   "tool": "Code Inspection",
   "category": "Android",
@@ -6913,37 +6913,6 @@
     "kotlin"
   ],
   "severity": "High",
-  "comment": "Property \"unneccesarry\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 8,
-      "offset": 9,
-      "length": 12,
-      "code": {
-        "startLine": 6,
-        "length": 12,
-        "offset": 52,
-        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "6bc6d5264eb7051348fb3343d882963aa24414fa987297ebd3f85d1fa837079d"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
   "comment": "Function \"greeting\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
@@ -7029,4 +6998,35 @@
     "inspectionName": "UnusedSymbol"
   },
   "hash": "16756fa526673ceec02ed070f17223bec8c822ba104b3e0967714d6dbe5a5614"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Property \"unneccesarry\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 8,
+      "offset": 9,
+      "length": 12,
+      "code": {
+        "startLine": 6,
+        "length": 12,
+        "offset": 52,
+        "surroundingCode": "\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "6bc6d5264eb7051348fb3343d882963aa24414fa987297ebd3f85d1fa837079d"
 }]}
