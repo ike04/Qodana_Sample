@@ -12,6 +12,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      TOTAL: ${{ steps.parse_json.outputs.TOTAL }}
     steps:
       - uses: actions/checkout@v3
 
