@@ -18,7 +18,7 @@ jobs:
       - uses: JetBrains/qodana-action@v2022.3.4
       - name: Get Qodana Result
         id: parse_json
-        run: echo "total=$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')" >> $GITHUB_OUTPUT
+        run: echo "total=${$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')}" >> $GITHUB_OUTPUT
       - name: Output
         run: echo ${{steps.parse_json.total}}
       - name: Deploy to GitHub Pages
