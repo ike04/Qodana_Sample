@@ -5,6 +5,19 @@
       "contentEntries": [
         {
           "path": "file://$PROJECT_DIR$",
+          "excludePatterns": [],
+          "excludeFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/.gradle",
+              "type": "Exclude",
+              "packagePrefix": ""
+            },
+            {
+              "path": "file://$PROJECT_DIR$/build",
+              "type": "Exclude",
+              "packagePrefix": ""
+            }
+          ],
           "sourceFolders": []
         }
       ],
@@ -24,6 +37,19 @@
       "contentEntries": [
         {
           "path": "file://$PROJECT_DIR$/app",
+          "excludePatterns": [],
+          "excludeFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/app/.gradle",
+              "type": "Exclude",
+              "packagePrefix": ""
+            },
+            {
+              "path": "file://$PROJECT_DIR$/app/build",
+              "type": "Exclude",
+              "packagePrefix": ""
+            }
+          ],
           "sourceFolders": []
         }
       ],
@@ -43,30 +69,44 @@
       "contentEntries": [
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/out",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/source/buildConfig/debug",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/renderscript_source_output_dir/debug/out",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/res/rs/debug",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/res/resValues/debug",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/src/main",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": [
             {
               "path": "file://$PROJECT_DIR$/app/src/main/java",
@@ -82,6 +122,8 @@
         },
         {
           "path": "file://$PROJECT_DIR$/app/src/debug",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         }
       ],
@@ -277,10 +319,14 @@
       "contentEntries": [
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debugUnitTest/out",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/src/test",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": [
             {
               "path": "file://$PROJECT_DIR$/app/src/test/java",
@@ -291,6 +337,8 @@
         },
         {
           "path": "file://$PROJECT_DIR$/app/src/testDebug",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         }
       ],
@@ -498,30 +546,44 @@
       "contentEntries": [
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debugAndroidTest/out",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debugAndroidTest/out",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/renderscript_source_output_dir/debugAndroidTest/out",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/res/rs/androidTest/debug",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/build/generated/res/resValues/androidTest/debug",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         },
         {
           "path": "file://$PROJECT_DIR$/app/src/androidTest",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": [
             {
               "path": "file://$PROJECT_DIR$/app/src/androidTest/java",
@@ -532,6 +594,8 @@
         },
         {
           "path": "file://$PROJECT_DIR$/app/src/androidTestDebug",
+          "excludePatterns": [],
+          "excludeFolders": [],
           "sourceFolders": []
         }
       ],

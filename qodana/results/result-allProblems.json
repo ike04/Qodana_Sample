@@ -6,7 +6,7 @@
     "Groovy"
   ],
   "severity": "High",
-  "comment": "A newer version of androidx.core:core-ktx than 1.7.0 is available: 1.10.0",
+  "comment": "A newer version of androidx.core:core-ktx than 1.7.0 is available: 1.10.1",
   "detailsInfo": "Obsolete Gradle Dependency  \n\nThis detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.  \n\nIssue id: GradleDependency",
   "sources": [
     {
@@ -28,7 +28,7 @@
     "module": "Qodana__Sample.app",
     "inspectionName": "AndroidLintGradleDependency"
   },
-  "hash": "379f2033d709021b65b675153b16ec1eb5509b2465bc178049da848c6f258878"
+  "hash": "5bf9fb8c2f29ed538ade00025caf5a00726790ee69f86033a13ee0c16e53818f"
 },{
   "tool": "Code Inspection",
   "category": "Android Lint: Correctness",
@@ -68,7 +68,7 @@
     "Groovy"
   ],
   "severity": "High",
-  "comment": "A newer version of com.google.android.material:material than 1.5.0 is available: 1.8.0",
+  "comment": "A newer version of com.google.android.material:material than 1.5.0 is available: 1.9.0",
   "detailsInfo": "Obsolete Gradle Dependency  \n\nThis detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.  \n\nIssue id: GradleDependency",
   "sources": [
     {
@@ -90,7 +90,7 @@
     "module": "Qodana__Sample.app",
     "inspectionName": "AndroidLintGradleDependency"
   },
-  "hash": "1e0759e38d492e5191d8d6afea6c0cee563894eb972cb19d67acd507ffaac130"
+  "hash": "71090b2dd38fe0b532d1d0e1b8850fc015b5633b6acedea6158e08b5845f5a37"
 },{
   "tool": "Code Inspection",
   "category": "Android Lint: Correctness",
@@ -713,6 +713,37 @@
   "hash": "700fccc9e3a939d35c7359b21fa3bb4b63f9f79ec48046894e8809e31ffe6bae"
 },{
   "tool": "Code Inspection",
+  "category": "Android Lint: Correctness",
+  "type": "Target SDK attribute is not targeting latest version",
+  "tags": [
+    "Groovy"
+  ],
+  "severity": "High",
+  "comment": "Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.",
+  "detailsInfo": "Target SDK attribute is not targeting latest version  \n\nWhen your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.  \n\nTo fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: <https://developer.android.com/reference/android/os/Build.VERSION_CODES.html> as well as follow this guide:  \n<https://developer.android.com/distribute/best-practices/develop/target-sdk.html>  \n\nIssue id: OldTargetApi",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/build.gradle",
+      "language": "Groovy",
+      "line": 13,
+      "offset": 9,
+      "length": 12,
+      "code": {
+        "startLine": 11,
+        "length": 12,
+        "offset": 76,
+        "surroundingCode": "        applicationId \"com.example.qodana_sample\"\n        minSdk 26\n        targetSdk 32\n        versionCode 1\n        versionName \"1.0\""
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app",
+    "inspectionName": "AndroidLintOldTargetApi"
+  },
+  "hash": "2288d8b9304d9d77509b9510b2884c2ad3c70fde43bf3da5aec20d92dca000e9"
+},{
+  "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Unused import directive",
   "tags": [
@@ -955,6 +986,37 @@
     "kotlin"
   ],
   "severity": "High",
+  "comment": "Function \"test\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 14,
+      "offset": 9,
+      "length": 4,
+      "code": {
+        "startLine": 12,
+        "length": 4,
+        "offset": 15,
+        "surroundingCode": "    }\n\n    fun test(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "16756fa526673ceec02ed070f17223bec8c822ba104b3e0967714d6dbe5a5614"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
   "comment": "Function \"main\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
@@ -1009,35 +1071,4 @@
     "inspectionName": "UnusedSymbol"
   },
   "hash": "ae0d24c7dfe18a066109607be65d7898c24d7b764dfe3fa2721f0868d7fb1a8e"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
-  "comment": "Function \"test\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 14,
-      "offset": 9,
-      "length": 4,
-      "code": {
-        "startLine": 12,
-        "length": 4,
-        "offset": 15,
-        "surroundingCode": "    }\n\n    fun test(s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "16756fa526673ceec02ed070f17223bec8c822ba104b3e0967714d6dbe5a5614"
 }]}
