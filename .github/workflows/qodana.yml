@@ -22,7 +22,7 @@ jobs:
         with:
           run_number: 75
       - name: path
-        run: echo tree "${{ runner.temp }}/qodana/results/qodana.sarif.json"
+        run: echo tree "${{ runner.temp }}"
 
       - uses: JetBrains/qodana-action@v2023.1.0
         with:
