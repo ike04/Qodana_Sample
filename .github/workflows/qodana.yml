@@ -20,7 +20,7 @@ jobs:
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
         with:
-          run_number: ${{ github.run_number }} -1
+          run_number: {${{ github.run_number }} -1}
 
       - uses: JetBrains/qodana-action@v2023.1.0
         with:
