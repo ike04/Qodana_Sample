@@ -16,13 +16,16 @@ jobs:
       TOTAL: ${{ steps.parse_json.outputs.TOTAL }}
     steps:
       - uses: actions/checkout@v3
+      - name: run number with offset
+        env:
+          NUM: ${{ github.run_number }}
+        run: |
+        echo ::set-env name=GITHUB_RUN_NUMBER_WITH_OFFSET::$(($NUM-1))
       - name: Download artifact
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
         with:
-          run_number: $((${{github.run_number}}-1))
-      - name: path
-        run: echo tree "${{ runner.temp }}"
+          run_number: $GITHUB_RUN_NUMBER_WITH_OFFSET
 
       - uses: JetBrains/qodana-action@v2023.1.0
         with:
