@@ -20,7 +20,7 @@ jobs:
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
         with:
-          run_number: 75
+          run_number: $((${{github.run_number}}-1))
       - name: path
         run: echo tree "${{ runner.temp }}"
 
