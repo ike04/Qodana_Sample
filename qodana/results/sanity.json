@@ -75,6 +75,68 @@
       "type": "file",
       "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
       "language": "kotlin",
+      "line": 16,
+      "offset": 2,
+      "length": 7,
+      "code": {
+        "startLine": 14,
+        "length": 7,
+        "offset": 73,
+        "surroundingCode": " * See [testing documentation](http://d.android.com/tools/testing).\n */\n@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "7c992dab9550517c7025d61fbb193a9e75c3bd28df5367106f321bdf4b7e59b3"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Type mismatch: inferred type is KClass but Class was expected",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "language": "kotlin",
+      "line": 16,
+      "offset": 10,
+      "length": 13,
+      "code": {
+        "startLine": 14,
+        "length": 13,
+        "offset": 81,
+        "surroundingCode": " * See [testing documentation](http://d.android.com/tools/testing).\n */\n@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "e5724150f8837c5b72dd9646df63888d37245517fb6b286d0d9d41ebc3a0eedd"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access class 'java.lang.Class'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "language": "kotlin",
       "line": 18,
       "offset": 6,
       "length": 4,
@@ -130,29 +192,29 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Cannot access class 'android.app.Instrumentation'. Check your module classpath for missing or conflicting dependencies",
+  "comment": "Unresolved reference: os",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
-      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 21,
-      "offset": 50,
-      "length": 18,
+      "line": 4,
+      "offset": 16,
+      "length": 2,
       "code": {
-        "startLine": 19,
-        "length": 18,
-        "offset": 117,
-        "surroundingCode": "    fun useAppContext() {\n        // Context of the app under test.\n        val appContext = InstrumentationRegistry.getInstrumentation().targetContext\n        assertEquals(\"com.example.qodana_sample\", appContext.packageName)\n    }"
+        "startLine": 2,
+        "length": 2,
+        "offset": 64,
+        "surroundingCode": "\nimport androidx.appcompat.app.AppCompatActivity\nimport android.os.Bundle\nimport android.util.Log\nimport androidx.annotation.Nullable"
       }
     }
   ],
   "attributes": {
-    "module": "Qodana__Sample.app.androidTest",
+    "module": "Qodana__Sample.app.main",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "f22c52b7339aa9d49debeb21bccbb4297263d407e557efa217900612bb36dcba"
+  "hash": "3c29ae69077cef5b30a4dac2ce62452fa70dba7c3c3720bb8270952872c13a79"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -161,29 +223,29 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Unresolved reference: targetContext",
+  "comment": "Unresolved reference: util",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
-      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 21,
-      "offset": 71,
-      "length": 13,
+      "line": 5,
+      "offset": 16,
+      "length": 4,
       "code": {
-        "startLine": 19,
-        "length": 13,
-        "offset": 138,
-        "surroundingCode": "    fun useAppContext() {\n        // Context of the app under test.\n        val appContext = InstrumentationRegistry.getInstrumentation().targetContext\n        assertEquals(\"com.example.qodana_sample\", appContext.packageName)\n    }"
+        "startLine": 3,
+        "length": 4,
+        "offset": 88,
+        "surroundingCode": "import androidx.appcompat.app.AppCompatActivity\nimport android.os.Bundle\nimport android.util.Log\nimport androidx.annotation.Nullable\n"
       }
     }
   ],
   "attributes": {
-    "module": "Qodana__Sample.app.androidTest",
+    "module": "Qodana__Sample.app.main",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "029bcb767ec1fdbb59d6addfb70de501e853e5c89dcad15c4b531f6113165dc6"
+  "hash": "908caa113dc59043c9ae66077b2260e00e0c6d9b73a88df87f3c3faedcbeecd9"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -246,66 +308,4 @@
     "inspectionName": "KotlinAnnotator"
   },
   "hash": "790704eb407b03f1a514320c30dd7253d784292efdcbe7baf8dfa027e998d157"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: Bundle",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 10,
-      "offset": 47,
-      "length": 6,
-      "code": {
-        "startLine": 8,
-        "length": 6,
-        "offset": 120,
-        "surroundingCode": "class MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "667cb1ef454ad27a62324498a63321baac8f2f336321ed5f141c6aed68105c21"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Cannot access 'android.app.Activity' which is a supertype of 'com.example.qodana_sample.MainActivity'. Check your module classpath for missing or conflicting dependencies",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 11,
-      "offset": 9,
-      "length": 5,
-      "code": {
-        "startLine": 9,
-        "length": 5,
-        "offset": 96,
-        "surroundingCode": "    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n    }"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "f006505db94b2abc3be54ca7166b4c16ba2bff1642fcf11b2ae719736760661a"
 }]}
