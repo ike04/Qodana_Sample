@@ -60195,35 +60195,6 @@
   "category": "Declaration redundancy",
   "type": "Unnecessary module dependency",
   "severity": "High",
-  "comment": "Module 'Qodana__Sample.app.androidTest' sources do not depend on module 'Qodana__Sample.app.main' sources",
-  "detailsInfo": "Reports dependencies on modules that are not used. The quick-fix safely removes such unused dependencies.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "Qodana__Sample.app.androidTest",
-      "language": "",
-      "line": 0,
-      "offset": 0,
-      "length": 0,
-      "code": {
-        "startLine": 0,
-        "length": 0,
-        "offset": 0,
-        "surroundingCode": ""
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.androidTest",
-    "inspectionName": "UnnecessaryModuleDependencyInspection",
-    "baselineState": "new"
-  },
-  "hash": "dd4dc0655d262e0369cbc135eca9d2f9c5d2c5cd7e45c6d7d87e69eb86385914"
-},{
-  "tool": "Code Inspection",
-  "category": "Declaration redundancy",
-  "type": "Unnecessary module dependency",
-  "severity": "High",
   "comment": "Module 'Qodana__Sample.app.unitTest' sources do not depend on module 'Qodana__Sample.app.main' sources",
   "detailsInfo": "Reports dependencies on modules that are not used. The quick-fix safely removes such unused dependencies.",
   "sources": [
@@ -60248,6 +60219,35 @@
     "baselineState": "new"
   },
   "hash": "89475afca9a7768eda143d1ae16b1ccfeb85393810d0cb94ccb629610749122b"
+},{
+  "tool": "Code Inspection",
+  "category": "Declaration redundancy",
+  "type": "Unnecessary module dependency",
+  "severity": "High",
+  "comment": "Module 'Qodana__Sample.app.androidTest' sources do not depend on module 'Qodana__Sample.app.main' sources",
+  "detailsInfo": "Reports dependencies on modules that are not used. The quick-fix safely removes such unused dependencies.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "Qodana__Sample.app.androidTest",
+      "language": "",
+      "line": 0,
+      "offset": 0,
+      "length": 0,
+      "code": {
+        "startLine": 0,
+        "length": 0,
+        "offset": 0,
+        "surroundingCode": ""
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "UnnecessaryModuleDependencyInspection",
+    "baselineState": "new"
+  },
+  "hash": "dd4dc0655d262e0369cbc135eca9d2f9c5d2c5cd7e45c6d7d87e69eb86385914"
 },{
   "tool": "Code Inspection",
   "category": "HTML",
@@ -62752,38 +62752,6 @@
     "kotlin"
   ],
   "severity": "High",
-  "comment": "Function \"main\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 17,
-      "offset": 9,
-      "length": 4,
-      "code": {
-        "startLine": 15,
-        "length": 4,
-        "offset": 73,
-        "surroundingCode": "    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "baselineState": "new"
-  },
-  "hash": "0ef72230756cfa0a2854f4adf08365d547f423e87d9b9950b864bd41f224bfe7"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
   "comment": "Property \"unneccesarry\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
@@ -62872,6 +62840,38 @@
     "baselineState": "new"
   },
   "hash": "23217f7fc08f92dc42216983841f8ebcc24cfae8d2368c3f78bfccdd1971d1c3"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"main\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 17,
+      "offset": 9,
+      "length": 4,
+      "code": {
+        "startLine": 15,
+        "length": 4,
+        "offset": 73,
+        "surroundingCode": "    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "baselineState": "new"
+  },
+  "hash": "0ef72230756cfa0a2854f4adf08365d547f423e87d9b9950b864bd41f224bfe7"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
