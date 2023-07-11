@@ -1,0 +1,43 @@
+name: Labeled
+on:
+  pull_request:
+    types: labeled
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      TOTAL: ${{ steps.parse_json.outputs.TOTAL }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download artifact
+        if: github.event.label.name == 'qodana'
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          workflow: qodana.yml
+      - uses: JetBrains/qodana-action@v2023.1.0
+        with:
+          args: --baseline,./qodana-report/results/qodana.sarif.json
+      - name: Get Qodana Result
+        if: github.event.label.name == 'qodana'
+        id: parse_json
+        run: echo "TOTAL="$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')"" >> $GITHUB_OUTPUT
+      - name: Output
+        if: github.event.label.name == 'qodana'
+        run: echo "${{steps.parse_json.outputs.TOTAL}} counts"
+      - name: Deploy to GitHub Pages
+        if: github.event.label.name == 'qodana'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ runner.temp }}/qodana/results/report
+          destination_dir: ./qodana
+  job:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      - name: Output2
+        if: github.event.label.name == 'qodana'
+        run: echo "${{needs.build.outputs.TOTAL}} counts"
