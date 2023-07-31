@@ -36,18 +36,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ runner.temp }}/qodana/results/report
           destination_dir: ./qodana
-      - name: Comment to Pull Request
-        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '解析が完了しました\n https://ike04.github.io/Qodana_Sample/qodana/ '
-            })
   job:
     runs-on: ubuntu-latest
     needs: build
