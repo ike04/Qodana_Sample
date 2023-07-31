@@ -16,9 +16,10 @@ jobs:
         uses: dawidd6/action-download-artifact@v2
         with:
           workflow: qodana.yml
-      - uses: JetBrains/qodana-action@v2023.1.0
+      - uses: JetBrains/qodana-action@v2023.2
         with:
           args: --baseline,./qodana-report/results/qodana.sarif.json
+          upload-result: true
       - name: Get Qodana Result
         if: github.event.label.name == 'qodana'
         id: parse_json
