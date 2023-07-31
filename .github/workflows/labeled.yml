@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Download artifact
-        if: github.event.label.name == 'qodana'
+        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
         with:
@@ -21,14 +21,14 @@ jobs:
           args: --baseline,./qodana-report/results/qodana.sarif.json
           upload-result: true
       - name: Get Qodana Result
-        if: github.event.label.name == 'qodana'
+        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
         id: parse_json
         run: echo "TOTAL="$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')"" >> $GITHUB_OUTPUT
       - name: Output
-        if: github.event.label.name == 'qodana'
+        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
         run: echo "${{steps.parse_json.outputs.TOTAL}} counts"
       - name: Deploy to GitHub Pages
-        if: github.event.label.name == 'qodana'
+        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -51,5 +51,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Output2
-        if: github.event.label.name == 'qodana'
+        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
         run: echo "${{needs.build.outputs.TOTAL}} counts"
