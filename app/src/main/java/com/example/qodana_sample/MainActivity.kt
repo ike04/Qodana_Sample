@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
 
     fun greeting(user: String): String? = "Hello, $user!"
 
+    fun greeting2(text: String): String? = "Hello, $text!"
+
     fun test(@Nullable s: String?): Int? = s?.let { it.length }
 
     fun main() {
