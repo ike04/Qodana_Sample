@@ -6738,6 +6738,38 @@
     "kotlin"
   ],
   "severity": "High",
+  "comment": "'greeting2' always returns non-null type",
+  "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 16,
+      "offset": 40,
+      "length": 1,
+      "code": {
+        "startLine": 14,
+        "length": 1,
+        "offset": 98,
+        "surroundingCode": "    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun greeting2(text: String): String? = \"Hello, $text!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "RedundantNullableReturnType",
+    "baselineState": "new"
+  },
+  "hash": "1f3ed7436124c8bc22d6244a9b190c49b33569fbd48b74f6e17a315f63317bd1"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant nullable return type",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
   "comment": "'unneccesarry' is always non-null type",
   "detailsInfo": "Reports functions and variables with nullable return type which never return or become `null`.\n\n**Example:**\n\n\n      fun greeting(user: String): String? = \"Hello, $user!\"\n\nAfter the quick-fix is applied:\n\n\n      fun greeting(user: String): String = \"Hello, $user!\"\n",
   "sources": [
@@ -6785,7 +6817,7 @@
         "startLine": 12,
         "length": 1,
         "offset": 45,
-        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }"
+        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun greeting2(text: String): String? = \"Hello, $text!\""
       }
     }
   ],
@@ -6795,7 +6827,7 @@
     "isTechDebt": "true",
     "baselineState": "unchanged"
   },
-  "hash": "6130d899ce85e52cfeddaa4a579e5c872b5df8a3390bc2a7b3242a984d61ffb1"
+  "hash": "99d3fa30c171f0be187552f9be1b9ed00d21d5b51871a297521968452309a610"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -6811,14 +6843,14 @@
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 16,
+      "line": 18,
       "offset": 47,
       "length": 3,
       "code": {
-        "startLine": 14,
+        "startLine": 16,
         "length": 3,
-        "offset": 105,
-        "surroundingCode": "    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
+        "offset": 106,
+        "surroundingCode": "    fun greeting2(text: String): String? = \"Hello, $text!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
       }
     }
   ],
@@ -6828,7 +6860,7 @@
     "isTechDebt": "true",
     "baselineState": "unchanged"
   },
-  "hash": "2badb05841ea7bf39c5fe2a4c10bcf48d0f05da4ad2810a89a5f8f402ab9eb19"
+  "hash": "a04ff7e5582d779f070e210d563eaa5c8e31c7d1c3be503ae9b6a0fb4b526ff8"
 },{
   "tool": "Code Inspection",
   "category": "Style issues",
@@ -6844,11 +6876,11 @@
       "type": "file",
       "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 19,
+      "line": 21,
       "offset": 25,
       "length": 6,
       "code": {
-        "startLine": 17,
+        "startLine": 19,
         "length": 6,
         "offset": 42,
         "surroundingCode": "\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }\n}"
@@ -6861,7 +6893,7 @@
     "isTechDebt": "true",
     "baselineState": "unchanged"
   },
-  "hash": "162a764c78302a78cbedb31de8678bc5a4fb98fee4c6dc69356c05138ff55633"
+  "hash": "d58425c9fe4ec6a3f3e226cf689df1dfc852902bd4ab1e7384b158498b238ff1"
 },{
   "tool": "Code Inspection",
   "category": "Declaration redundancy",
@@ -6922,6 +6954,39 @@
     "baselineState": "unchanged"
   },
   "hash": "dd4dc0655d262e0369cbc135eca9d2f9c5d2c5cd7e45c6d7d87e69eb86385914"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"test\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 18,
+      "offset": 9,
+      "length": 4,
+      "code": {
+        "startLine": 16,
+        "length": 4,
+        "offset": 68,
+        "surroundingCode": "    fun greeting2(text: String): String? = \"Hello, $text!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "isTechDebt": "true",
+    "baselineState": "unchanged"
+  },
+  "hash": "16bf2512bb1e78e28687de4c1b279fbd67c8348a424098024447fef5a5f1ae8f"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -6996,40 +7061,7 @@
     "kotlin"
   ],
   "severity": "High",
-  "comment": "Function \"main\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
-      "language": "kotlin",
-      "line": 18,
-      "offset": 9,
-      "length": 4,
-      "code": {
-        "startLine": 16,
-        "length": 4,
-        "offset": 73,
-        "surroundingCode": "    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample.app.main",
-    "inspectionName": "UnusedSymbol",
-    "isTechDebt": "true",
-    "baselineState": "unchanged"
-  },
-  "hash": "3e20447257bbe56f1f9d039808f22ae0c650dc2fe9226fa1ad08c329f6b8a4b0"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "tags": [
-    "kotlin"
-  ],
-  "severity": "High",
-  "comment": "Function \"test\" is never used",
+  "comment": "Function \"greeting2\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
@@ -7038,22 +7070,21 @@
       "language": "kotlin",
       "line": 16,
       "offset": 9,
-      "length": 4,
+      "length": 9,
       "code": {
         "startLine": 14,
-        "length": 4,
+        "length": 9,
         "offset": 67,
-        "surroundingCode": "    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {"
+        "surroundingCode": "    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun greeting2(text: String): String? = \"Hello, $text!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }"
       }
     }
   ],
   "attributes": {
     "module": "Qodana__Sample.app.main",
     "inspectionName": "UnusedSymbol",
-    "isTechDebt": "true",
-    "baselineState": "unchanged"
+    "baselineState": "new"
   },
-  "hash": "a7b7ae04fca718fc109a5d7cebc6c4932e22dd981bc62c14b7a29fc8649b0a4c"
+  "hash": "2977e6aceb423bf5e36b21028cdc32d2caf6df9ee56362eac333e96dae551eaf"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -7076,7 +7107,7 @@
         "startLine": 12,
         "length": 8,
         "offset": 15,
-        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }"
+        "surroundingCode": "    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun greeting2(text: String): String? = \"Hello, $text!\""
       }
     }
   ],
@@ -7086,7 +7117,40 @@
     "isTechDebt": "true",
     "baselineState": "unchanged"
   },
-  "hash": "be32ee3d24a1014646aa2943fe592a3a6defaa4ff8342d517d916f3f135a1347"
+  "hash": "8931f7649b8b56550c71914389b9fee4a9cd2bfefec7c40291ec37a1e7d29912"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
+  "comment": "Function \"main\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 20,
+      "offset": 9,
+      "length": 4,
+      "code": {
+        "startLine": 18,
+        "length": 4,
+        "offset": 73,
+        "surroundingCode": "    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "isTechDebt": "true",
+    "baselineState": "unchanged"
+  },
+  "hash": "d124debb1099335c490762be55f4db2655be61e1dbd77fec41d8cc0436e89924"
 },{
   "tool": "Code Inspection",
   "category": "XML",
