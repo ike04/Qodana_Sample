@@ -11,30 +11,33 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Download artifact
-        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
         with:
           workflow: qodana.yml
-      - uses: JetBrains/qodana-action@v2023.2
+      - name: Qodana
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
+        uses: JetBrains/qodana-action@v2023.2
         with:
           args: --baseline,./qodana-report/results/qodana.sarif.json
           upload-result: true
       - name: Get Qodana Result
-        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         id: parse_json
         run: echo "TOTAL="$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')"" >> $GITHUB_OUTPUT
       - name: Output
-        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         run: echo "${{steps.parse_json.outputs.TOTAL}} counts"
       - name: Deploy to GitHub Pages
-        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ runner.temp }}/qodana/results/report
           destination_dir: ./qodana
       - name: Comment to Pull Request
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         uses: actions/github-script@v6
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
