@@ -2,7 +2,7 @@
   "modules": [
     {
       "name": "Qodana__Sample",
-      "languageLevel": 11
+      "languageLevel": 17
     },
     {
       "name": "Qodana__Sample.app",
