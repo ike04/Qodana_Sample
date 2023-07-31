@@ -2,13 +2,13 @@ name: Qodana
 
 on:
   push:
-    branches: [ fix_yml ]
-    paths-ignore: [ '**.md', '**.MD' ]
-  pull_request:
-    branches: [ fix_yml ]
-    paths-ignore: [ '**.md', '**.MD' ]
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
   workflow_dispatch:
 
+version: 1.0
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
         with:
           run_number: ${{ env.GITHUB_RUN_NUMBER_WITH_OFFSET }}
 
-      - uses: JetBrains/qodana-action@v2023.1.0
+      - uses: JetBrains/qodana-action@v2023.2
         with:
           args: --baseline,./qodana-report/results/qodana.sarif.json
       - name: Get Qodana Result
