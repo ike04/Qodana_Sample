@@ -32030,38 +32030,6 @@
   "category": "Proofreading",
   "type": "Typo",
   "tags": [
-    "yaml"
-  ],
-  "severity": "Low",
-  "comment": "Typo: In word 'peaceiris'",
-  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
-  "sources": [
-    {
-      "type": "file",
-      "path": ".github/workflows/labeled.yml",
-      "language": "yaml",
-      "line": 34,
-      "offset": 15,
-      "length": 9,
-      "code": {
-        "startLine": 32,
-        "length": 9,
-        "offset": 144,
-        "surroundingCode": "      - name: Deploy to GitHub Pages\n        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
-  },
-  "hash": "6a32f1f4c450fbe089ba3b5f515e4a13aa1feac65add103b9c450ea0792b47d1"
-},{
-  "tool": "Code Inspection",
-  "category": "Proofreading",
-  "type": "Typo",
-  "tags": [
     "TEXT"
   ],
   "severity": "Low",
@@ -35311,6 +35279,38 @@
     "baselineState": "unchanged"
   },
   "hash": "792062b4bd13d2340f8ac731e6edbba961701df4772370ca7a61a5eb7a6b990f"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "yaml"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'peaceiris'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": ".github/workflows/labeled.yml",
+      "language": "yaml",
+      "line": 35,
+      "offset": 15,
+      "length": 9,
+      "code": {
+        "startLine": 33,
+        "length": 9,
+        "offset": 144,
+        "surroundingCode": "      - name: Deploy to GitHub Pages\n        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "7a2359cccd48d5c9c9ae60fec7bbf236d71cd7f21426d1548f3245d8d29231e0"
 },{
   "tool": "Code Inspection",
   "category": "Proofreading",
