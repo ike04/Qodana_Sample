@@ -22,6 +22,7 @@ jobs:
         with:
           args: --baseline,./qodana-report/results/qodana.sarif.json
           upload-result: true
+          pr-mode: false
       - name: Get Qodana Result
         if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         id: parse_json
