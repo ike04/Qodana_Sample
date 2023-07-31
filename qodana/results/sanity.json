@@ -1,1 +1,125 @@
-{"version":"3","listProblem":[]}
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Qodana",
+  "type": "Sanity",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access class 'java.lang.Class'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "language": "kotlin",
+      "line": 18,
+      "offset": 6,
+      "length": 4,
+      "code": {
+        "startLine": 16,
+        "length": 4,
+        "offset": 68,
+        "surroundingCode": "@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test\n    fun useAppContext() {\n        // Context of the app under test."
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "QodanaSanity"
+  },
+  "hash": "0236b117dffff0b9cdd363a3419ace8378b3d4b0b326615c8bf266148dc56f3f"
+},{
+  "tool": "Code Inspection",
+  "category": "Qodana",
+  "type": "Sanity",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access class 'java.lang.Class'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "language": "kotlin",
+      "line": 16,
+      "offset": 2,
+      "length": 7,
+      "code": {
+        "startLine": 14,
+        "length": 7,
+        "offset": 73,
+        "surroundingCode": " * See [testing documentation](http://d.android.com/tools/testing).\n */\n@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "QodanaSanity"
+  },
+  "hash": "68a54e02aaf8c54191ceb579a6bf7fabbbbc8ce7e2fd6c88568c67801ee6772c"
+},{
+  "tool": "Code Inspection",
+  "category": "Qodana",
+  "type": "Sanity",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Type mismatch: inferred type is KClass but Class was expected",
+  "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "language": "kotlin",
+      "line": 16,
+      "offset": 10,
+      "length": 20,
+      "code": {
+        "startLine": 14,
+        "length": 20,
+        "offset": 81,
+        "surroundingCode": " * See [testing documentation](http://d.android.com/tools/testing).\n */\n@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "QodanaSanity"
+  },
+  "hash": "9d6d42b927b75cf0d991b601d379f7a7b4b5c9564079efbed318b75afecc3f1e"
+},{
+  "tool": "Code Inspection",
+  "category": "Qodana",
+  "type": "Sanity",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access 'java.lang.Object' which is a supertype of 'androidx.test.platform.app.InstrumentationRegistry'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "language": "kotlin",
+      "line": 21,
+      "offset": 50,
+      "length": 18,
+      "code": {
+        "startLine": 19,
+        "length": 18,
+        "offset": 117,
+        "surroundingCode": "    fun useAppContext() {\n        // Context of the app under test.\n        val appContext = InstrumentationRegistry.getInstrumentation().targetContext\n        assertEquals(\"com.example.qodana_sample\", appContext.packageName)\n    }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.androidTest",
+    "inspectionName": "QodanaSanity"
+  },
+  "hash": "d13764669002bba9bcac87f7aa8e9553912afcfb5732e1f43fcccf4decca1cf4"
+}]}
