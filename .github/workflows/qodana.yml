@@ -29,6 +29,7 @@ jobs:
       - uses: JetBrains/qodana-action@v2023.2
         with:
           args: --baseline,./qodana-report/results/qodana.sarif.json
+          upload-result: true
       - name: Get Qodana Result
         id: parse_json
         run: echo "TOTAL="$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')"" >> $GITHUB_OUTPUT
