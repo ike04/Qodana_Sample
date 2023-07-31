@@ -2,7 +2,11 @@
   "sdks": [
     {
       "name": "Android API 32 Platform",
-      "roots": []
+      "roots": [
+        "jar:///opt/android-sdk/platforms/android-32/android.jar!/",
+        "file:///opt/android-sdk/platforms/android-32/data/res"
+      ],
+      "sdkType": "Android SDK"
     },
     {
       "name": "11",
