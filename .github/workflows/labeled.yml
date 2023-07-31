@@ -16,6 +16,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v2
         with:
           workflow: qodana.yml
+          if_no_artifact_found: ignore
       - name: Qodana
         if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         uses: JetBrains/qodana-action@v2023.2
