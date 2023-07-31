@@ -224,16 +224,16 @@
           "description": "Reports calls to `assertTrue()` and `assertFalse()` that can be replaced with assert equality functions.\n\n\n`assertEquals()`, `assertSame()`, and their negating counterparts (-Not-) provide more informative messages on\nfailure.\n\n**Example:**\n\n      assertTrue(a == b)\n\nAfter the quick-fix is applied:\n\n      assertEquals(a, b)\n"
         },
         {
-          "shortName": "ReplaceStringFormatWithLiteral",
-          "displayName": "'String.format' call can be replaced with string templates",
-          "enabled": true,
-          "description": "Reports `String.format` calls that can be replaced with string templates.\n\nUsing string templates makes your code simpler.\n\nThe quick-fix replaces the call with a string template.\n\n**Example:**\n\n\n      fun main() {\n          val id = \"abc\"\n          val date = \"123\"\n          val s = String.format(\"%s_%s_%s\", id, date, id)\n      }\n\nAfter the quick-fix is applied:\n\n\n      fun main() {\n          val id = \"abc\"\n          val date = \"123\"\n          val s = \"${id}_${date}_$id\"\n      }\n"
-        },
-        {
           "shortName": "ReplaceNotNullAssertionWithElvisReturn",
           "displayName": "Not-null assertion can be replaced with 'return'",
           "enabled": false,
           "description": "Reports not-null assertion (`!!`) calls that can be replaced with the elvis operator and return (`?: return`).\n\nA not-null assertion can lead to NPE (NullPointerException) that is not expected. Avoiding the use of `!!` is good practice.\n\nThe quick-fix replaces the not-null assertion with `return` or `return null`.\n\n**Example:**\n\n\n      fun test(number: Int?) {\n          val x = number!!\n      }\n\nAfter the quick-fix is applied:\n\n\n      fun test(number: Int?) {\n          val x = number ?: return\n      }\n"
+        },
+        {
+          "shortName": "ReplaceStringFormatWithLiteral",
+          "displayName": "'String.format' call can be replaced with string templates",
+          "enabled": true,
+          "description": "Reports `String.format` calls that can be replaced with string templates.\n\nUsing string templates makes your code simpler.\n\nThe quick-fix replaces the call with a string template.\n\n**Example:**\n\n\n      fun main() {\n          val id = \"abc\"\n          val date = \"123\"\n          val s = String.format(\"%s_%s_%s\", id, date, id)\n      }\n\nAfter the quick-fix is applied:\n\n\n      fun main() {\n          val id = \"abc\"\n          val date = \"123\"\n          val s = \"${id}_${date}_$id\"\n      }\n"
         },
         {
           "shortName": "ReplaceSubstringWithSubstringBefore",
@@ -1271,16 +1271,16 @@
           "description": "Manifest Resource References  \n\nElements in the manifest can reference resources, but those resources cannot vary across configurations (except as a special case, by version, and except for a few specific package attributes such as the application title and icon).  \n\nIssue id: ManifestResource"
         },
         {
-          "shortName": "AndroidLintNamespaceTypo",
-          "displayName": "Misspelled namespace declaration",
-          "enabled": true,
-          "description": "Misspelled namespace declaration  \n\nAccidental misspellings in namespace declarations can lead to some very obscure error messages. This check looks for potential misspellings to help track these down.  \n\nIssue id: NamespaceTypo"
-        },
-        {
           "shortName": "AndroidLintSlices",
           "displayName": "Slices",
           "enabled": true,
           "description": "Slices  \n\nThis check analyzes usages of the Slices API and offers suggestions based on best practices.  \n\nIssue id: Slices"
+        },
+        {
+          "shortName": "AndroidLintNamespaceTypo",
+          "displayName": "Misspelled namespace declaration",
+          "enabled": true,
+          "description": "Misspelled namespace declaration  \n\nAccidental misspellings in namespace declarations can lead to some very obscure error messages. This check looks for potential misspellings to help track these down.  \n\nIssue id: NamespaceTypo"
         },
         {
           "shortName": "AndroidLintShowToast",
@@ -1499,16 +1499,16 @@
           "description": "Malformed Device Admin  \n\nIf you register a broadcast receiver which acts as a device admin, you must also register an `<intent-filter>` for the action `android.app.action.DEVICE_ADMIN_ENABLED`, without any `<data>`, such that the device admin can be activated/deactivated.  \n\nTo do this, add\n\n```\n`<intent-filter>`\n    `<action android:name=\"android.app.action.DEVICE_ADMIN_ENABLED\" />`\n`</intent-filter>`\n```\n\nto your `<receiver>`.  \n\nIssue id: DeviceAdmin"
         },
         {
-          "shortName": "AndroidLintValidActionsXml",
-          "displayName": "Invalid Action Descriptor",
-          "enabled": false,
-          "description": "Invalid Action Descriptor  \n\nEnsures that an actions XML file is properly formed  \n\nIssue id: ValidActionsXml"
-        },
-        {
           "shortName": "AndroidLintDataBindingWithoutKapt",
           "displayName": "Data Binding without Annotation Processing",
           "enabled": true,
           "description": "Data Binding without Annotation Processing  \n\nApps that use Kotlin and data binding should also apply the kotlin-kapt plugin.  \n\nIssue id: DataBindingWithoutKapt  \n\n<https://kotlinlang.org/docs/reference/kapt.html>"
+        },
+        {
+          "shortName": "AndroidLintValidActionsXml",
+          "displayName": "Invalid Action Descriptor",
+          "enabled": false,
+          "description": "Invalid Action Descriptor  \n\nEnsures that an actions XML file is properly formed  \n\nIssue id: ValidActionsXml"
         },
         {
           "shortName": "AndroidLintInstantApps",
@@ -2405,16 +2405,16 @@
           "description": "Cannot use `ACCESS_FINE_LOCATION` without `ACCESS_COARSE_LOCATION`  \n\nIf your app requires access to FINE location, on Android 12 and higher you must now request both FINE and COARSE. Users will have the option to grant only COARSE location. Ensure your app can work with just COARSE location.  \n\nIssue id: CoarseFineLocation"
         },
         {
-          "shortName": "AndroidLintPinSetExpiry",
-          "displayName": "Validate <pin-set> expiration attribute",
-          "enabled": true,
-          "description": "Validate `<pin-set>` expiration attribute  \n\nEnsures that the `expiration` attribute of the `<pin-set>` element is valid and has not already expired or is expiring soon  \n\nIssue id: PinSetExpiry  \n\n<https://developer.android.com/preview/features/security-config.html>"
-        },
-        {
           "shortName": "AndroidLintLeanbackUsesWifi",
           "displayName": "Using android.hardware.wifi on TV",
           "enabled": true,
           "description": "Using android.hardware.wifi on TV  \n\nWiFi is not required for Android TV and many devices connect to the internet via alternative methods e.g. Ethernet.  \n\nIf your app is not focused specifically on WiFi functionality and only wishes to connect to the internet, please modify your Manifest to contain: `<uses-feature android:name=\"android.hardware.wifi\" android:required=\"false\" />`  \n\nUn-metered or non-roaming connections can be detected in software using `NetworkCapabilities#NET_CAPABILITY_NOT_METERED` and `NetworkCapabilities#NET_CAPABILITY_NOT_ROAMING.`  \n\nIssue id: LeanbackUsesWifi"
+        },
+        {
+          "shortName": "AndroidLintPinSetExpiry",
+          "displayName": "Validate <pin-set> expiration attribute",
+          "enabled": true,
+          "description": "Validate `<pin-set>` expiration attribute  \n\nEnsures that the `expiration` attribute of the `<pin-set>` element is valid and has not already expired or is expiring soon  \n\nIssue id: PinSetExpiry  \n\n<https://developer.android.com/preview/features/security-config.html>"
         },
         {
           "shortName": "AndroidLintAppCompatMethod",
@@ -2561,16 +2561,16 @@
           "description": "Using `dp` instead of `sp` for text sizes  \n\nWhen setting text sizes, you should normally use `sp`, or \"scale-independent pixels\". This is like the `dp` unit, but it is also scaled by the user's font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user's preference.  \n\nThere **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user's font size settings are not respected, so consider adjusting the layout itself to be more flexible.  \n\nIssue id: SpUsage  \n\n<https://developer.android.com/training/multiscreen/screendensities.html>"
         },
         {
-          "shortName": "AndroidLintStringEscaping",
-          "displayName": "Invalid string escapes",
-          "enabled": true,
-          "description": "Invalid string escapes  \n\nApostrophes (') must always be escaped (with a \\\\\\\\), unless they appear in a string which is itself escaped in double quotes (\").  \n\nIssue id: StringEscaping"
-        },
-        {
           "shortName": "AndroidLintValidFragment",
           "displayName": "Fragment not instantiatable",
           "enabled": true,
           "description": "Fragment not instantiatable  \n\nFrom the Fragment documentation:  \n**Every** fragment must have an empty constructor, so it can be instantiated when restoring its activity's state. It is strongly recommended that subclasses do not have other constructors with parameters, since these constructors will not be called when the fragment is re-instantiated; instead, arguments can be supplied by the caller with `setArguments(Bundle)` and later retrieved by the Fragment with `getArguments()`.  \n\nNote that this is no longer true when you are using `androidx.fragment.app.Fragment`; with the `FragmentFactory` you can supply any arguments you want (as of version androidx version 1.1).  \n\nIssue id: ValidFragment  \n\n<https://developer.android.com/reference/android/app/Fragment.html#Fragment()>"
+        },
+        {
+          "shortName": "AndroidLintStringEscaping",
+          "displayName": "Invalid string escapes",
+          "enabled": true,
+          "description": "Invalid string escapes  \n\nApostrophes (') must always be escaped (with a \\\\\\\\), unless they appear in a string which is itself escaped in double quotes (\").  \n\nIssue id: StringEscaping"
         },
         {
           "shortName": "AndroidLintSdCardPath",
@@ -5648,16 +5648,16 @@
           "description": "Reports non-final fields in enumeration types. Non-final fields introduce global mutable state, which is generally considered undesirable.\n\n**Example:**\n\n\n      enum Enum {\n        FIRST(\"first\"),\n        SECOND(\"second\");\n\n        public String str;\n\n        Enum(String str) {\n            this.str = str;\n        }\n      }\n\nAfter the quick-fix is applied:\n\n\n      enum Enum {\n        FIRST(\"first\"),\n        SECOND(\"second\");\n\n        public final String str;\n\n        Enum(String str) {\n            this.str = str;\n        }\n      }\n\nUse the \\`Ignore fields that cannot be made 'final'\\` option to only warn on fields that can be made final using the quick-fix."
         },
         {
-          "shortName": "NonFinalUtilityClass",
-          "displayName": "Utility class is not 'final'",
-          "enabled": false,
-          "description": "Reports utility classes that aren't `final` or `abstract`.\n\nUtility classes have all fields and methods declared as `static`.\nMaking them `final` prevents them from being accidentally subclassed.\n\n**Example:**\n\n\n      public class UtilityClass {\n        public static void foo() {}\n      }\n\nAfter the quick-fix is applied:\n\n\n      public final class UtilityClass {\n        public static void foo() {}\n      }\n"
-        },
-        {
           "shortName": "Singleton",
           "displayName": "Singleton",
           "enabled": false,
           "description": "Reports singleton classes.\n\nSingleton classes are declared in a way that only one instance of the class can ever be instantiated. Singleton classes complicate testing,\nand their presence may indicate a lack of object-oriented design.\n\n**Example:**\n\n\n      class Singleton {\n        private static final Singleton ourInstance = new Singleton();\n\n        private Singleton() {\n        }\n\n        public Singleton getInstance() {\n            return ourInstance;\n        }\n      }\n"
+        },
+        {
+          "shortName": "NonFinalUtilityClass",
+          "displayName": "Utility class is not 'final'",
+          "enabled": false,
+          "description": "Reports utility classes that aren't `final` or `abstract`.\n\nUtility classes have all fields and methods declared as `static`.\nMaking them `final` prevents them from being accidentally subclassed.\n\n**Example:**\n\n\n      public class UtilityClass {\n        public static void foo() {}\n      }\n\nAfter the quick-fix is applied:\n\n\n      public final class UtilityClass {\n        public static void foo() {}\n      }\n"
         },
         {
           "shortName": "ParameterCanBeLocal",
@@ -5998,16 +5998,16 @@
           "description": "Reports classes that refer to their subclasses in static initializers or static fields.\n\nSuch references can cause JVM-level deadlocks in multithreaded environment, when one thread tries to load the superclass\nand another thread tries to load the subclass at the same time.\n\n**Example:**\n\n\n      class Parent {\n        static final Child field = new Child();\n      }\n      class Child extends Parent { }\n"
         },
         {
-          "shortName": "NonSynchronizedMethodOverridesSynchronizedMethod",
-          "displayName": "Unsynchronized method overrides 'synchronized' method",
-          "enabled": false,
-          "description": "Reports non-`synchronized` methods overriding `synchronized` methods.\n\n\nThe overridden method will not be automatically synchronized if the superclass method\nis declared as `synchronized`. This may result in unexpected race conditions when using the subclass.\n\n**Example:**\n\n\n      class Super {\n        synchronized void process() {}\n      }\n      class Sub extends Super {\n        // Unsynchronized method 'process()' overrides synchronized method\n        void process() {}\n      }  \n"
-        },
-        {
           "shortName": "WaitCalledOnCondition",
           "displayName": "'wait()' called on 'java.util.concurrent.locks.Condition' object",
           "enabled": false,
           "description": "Reports calls to `wait()` made on a `java.util.concurrent.locks.Condition` object. This is probably a programming error, and some variant of the `await()` method was intended instead.\n\n**Example:**\n\n\n      void acquire(Condition released) throws InterruptedException {\n        while (acquired) {\n          released.wait();\n        }\n      }\n\nGood code would look like this:\n\n\n      void acquire(Condition released) throws InterruptedException {\n        while (acquired) {\n          released.await();\n        }\n      }\n"
+        },
+        {
+          "shortName": "NonSynchronizedMethodOverridesSynchronizedMethod",
+          "displayName": "Unsynchronized method overrides 'synchronized' method",
+          "enabled": false,
+          "description": "Reports non-`synchronized` methods overriding `synchronized` methods.\n\n\nThe overridden method will not be automatically synchronized if the superclass method\nis declared as `synchronized`. This may result in unexpected race conditions when using the subclass.\n\n**Example:**\n\n\n      class Super {\n        synchronized void process() {}\n      }\n      class Sub extends Super {\n        // Unsynchronized method 'process()' overrides synchronized method\n        void process() {}\n      }  \n"
         },
         {
           "shortName": "WaitNotifyNotInSynchronizedContext",
@@ -6279,16 +6279,16 @@
           "description": "Reports equality expressions which are negated by a prefix expression.\n\nSuch expressions can be simplified using the `!=` operator.\n\nExample:\n\n\n      !(i == 1)\n\nAfter the quick-fix is applied:\n\n\n      i != 1\n"
         },
         {
-          "shortName": "DoubleNegation",
-          "displayName": "Double negation",
-          "enabled": true,
-          "description": "Reports double negations that can be simplified.\n\nExample:\n\n\n      if (!!functionCall()) {}\n\nAfter the quick-fix is applied:\n\n\n      if (functionCall()) {}\n\nExample:\n\n\n      if (!(a != b)) {}\n\nAfter the quick-fix is applied:\n\n\n      if (a == b) {}\n"
-        },
-        {
           "shortName": "AssertionCanBeIf",
           "displayName": "Assertion can be replaced with 'if' statement",
           "enabled": true,
           "description": "Reports `assert` statements and suggests replacing them with `if` statements that throw `java.lang.AssertionError`.\n\nExample:\n\n\n      assert param != null;\n\nAfter the quick-fix is applied:\n\n\n      if (param == null) throw new AssertionError();\n"
+        },
+        {
+          "shortName": "DoubleNegation",
+          "displayName": "Double negation",
+          "enabled": true,
+          "description": "Reports double negations that can be simplified.\n\nExample:\n\n\n      if (!!functionCall()) {}\n\nAfter the quick-fix is applied:\n\n\n      if (functionCall()) {}\n\nExample:\n\n\n      if (!(a != b)) {}\n\nAfter the quick-fix is applied:\n\n\n      if (a == b) {}\n"
         },
         {
           "shortName": "BreakStatement",
@@ -6926,67 +6926,67 @@
         {
           "shortName": "HtmlUnknownBooleanAttribute",
           "displayName": "Incorrect boolean attribute",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports an HTML non-boolean attribute without a value. Suggests configuring attributes that should not be reported."
         },
         {
           "shortName": "HtmlMissingClosingTag",
           "displayName": "Missing closing tag",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports an HTML element without a closing tag. Some coding styles require that HTML elements have closing tags even where this is optional.\n\n**Example:**\n\n\n      <html>\n        <body>\n          <p>Behold!\n        </body>\n      </html>\n\nAfter the quick-fix is applied:\n\n\n      <html>\n        <body>\n          <p>Behold!</p>\n        </body>\n      </html>\n"
         },
         {
           "shortName": "CheckEmptyScriptTag",
           "displayName": "Empty tag",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports empty tags that do not work in some browsers.\n\n**Example:**\n\n\n      <html>\n        <script/>\n      </html>\n\nAfter the quick-fix is applied:\n\n\n      <html>\n        <script></script>\n      </html>\n"
         },
         {
           "shortName": "HtmlUnknownTarget",
           "displayName": "Unresolved file in a link",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports an unresolved file in a link."
         },
         {
           "shortName": "HtmlUnknownAttribute",
           "displayName": "Unknown attribute",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports an unknown HTML attribute. Suggests configuring attributes that should not be reported."
         },
         {
           "shortName": "HtmlExtraClosingTag",
           "displayName": "Redundant closing tag",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports redundant closing tags on empty elements, for example, `img` or `br`.\n\n**Example:**\n\n\n      <html>\n        <body>\n          <br></br>\n        </body>\n      </html>\n\nAfter the quick-fix is applied:\n\n\n      <html>\n        <body>\n          <br>\n        </body>\n      </html>\n"
         },
         {
           "shortName": "HtmlUnknownTag",
           "displayName": "Unknown tag",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports an unknown HTML tag. Suggests configuring tags that should not be reported."
         },
         {
           "shortName": "RequiredAttributes",
           "displayName": "Missing required attribute",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports a missing mandatory attribute in an XML/HTML tag. Suggests configuring attributes that should not be reported."
         },
         {
           "shortName": "HtmlWrongAttributeValue",
           "displayName": "Wrong attribute value",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports an incorrect HTML attribute value."
         },
         {
           "shortName": "CheckValidXmlInScriptTagBody",
           "displayName": "Malformed content of 'script' tag",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports contents of `script` tags that are invalid XML.  \n\n**Example:**\n\n\n      <script type=\"text/javascript\">\n        console.log('<');\n      </script>\n\nAfter the quick-fix is applied:\n\n\n      <script type=\"text/javascript\">\n        console.log('&lt;');\n      </script>\n"
         },
         {
           "shortName": "HtmlUnknownAnchorTarget",
           "displayName": "Unresolved fragment in a link",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports an unresolved last part of an URL after the `#` sign."
         }
       ]
@@ -10503,19 +10503,19 @@
         {
           "shortName": "SpellCheckingInspection",
           "displayName": "Typo",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click."
         },
         {
           "shortName": "LanguageDetectionInspection",
           "displayName": "Natural language detection",
-          "enabled": true,
+          "enabled": false,
           "description": "Detects natural languages and suggests enabling corresponding grammar and spelling checks."
         },
         {
           "shortName": "GrazieInspection",
           "displayName": "Grammar",
-          "enabled": true,
+          "enabled": false,
           "description": "Reports grammar mistakes in your text. You can configure the inspection in [Settings \\| Editor \\| Natural Languages \\| Grammar](settings://reference.settingsdialog.project.grazie)."
         }
       ]
