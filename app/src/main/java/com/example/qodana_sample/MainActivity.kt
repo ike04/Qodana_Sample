@@ -3,6 +3,7 @@ package com.example.qodana_sample
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.annotation.Nullable
 
 class MainActivity : AppCompatActivity() {
     val unneccesarry: Int? = 0
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun test(s: String?): Int? = s?.let { it.length }
+    fun test(@Nullable s: String?): Int? = s?.let { it.length }
 
     fun main() {
         listOf(1, 2, 3).filter { it > 1 }.count()

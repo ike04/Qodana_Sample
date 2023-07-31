@@ -1,14 +1,8 @@
-name: Qodana
-
+name: Labeled
 on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-  workflow_dispatch:
+  pull_request:
+    types: labeled
 
-version: 1.0
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,26 +10,28 @@ jobs:
       TOTAL: ${{ steps.parse_json.outputs.TOTAL }}
     steps:
       - uses: actions/checkout@v3
-      - name: run number with offset
-        env:
-          NUM: ${{ github.run_number }}
-        run: |
-          echo "GITHUB_RUN_NUMBER_WITH_OFFSET=$(($NUM - 1))" >> $GITHUB_ENV
       - name: Download artifact
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
         with:
-          run_number: ${{ env.GITHUB_RUN_NUMBER_WITH_OFFSET }}
-
-      - uses: JetBrains/qodana-action@v2023.2
+          workflow: qodana.yml
+      - name: Qodana
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
+        uses: JetBrains/qodana-action@v2023.2
         with:
           args: --baseline,./qodana-report/results/qodana.sarif.json
+          upload-result: true
+          pr-mode: false
       - name: Get Qodana Result
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         id: parse_json
         run: echo "TOTAL="$(cat ${{ runner.temp }}/qodana/results/report/results/metaInformation.json | jq -r '.total')"" >> $GITHUB_OUTPUT
       - name: Output
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         run: echo "${{steps.parse_json.outputs.TOTAL}} counts"
       - name: Deploy to GitHub Pages
+        if: ${{(github.event.label.name == 'qodana') || (github.event.label.name == 'テスト')}}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -47,4 +43,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Output2
+        if: ${{(github.event.label.name == 'qodana') && (github.event.label.name == 'テスト')}}
         run: echo "${{needs.build.outputs.TOTAL}} counts"
