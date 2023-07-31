@@ -6819,38 +6819,6 @@
   "category": "Proofreading",
   "type": "Typo",
   "tags": [
-    "yaml"
-  ],
-  "severity": "Low",
-  "comment": "Typo: In word 'peaceiris'",
-  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
-  "sources": [
-    {
-      "type": "file",
-      "path": ".github/workflows/qodana.yml",
-      "language": "yaml",
-      "line": 38,
-      "offset": 15,
-      "length": 9,
-      "code": {
-        "startLine": 36,
-        "length": 9,
-        "offset": 114,
-        "surroundingCode": "        run: echo \"${{steps.parse_json.outputs.TOTAL}} counts\"\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "Qodana__Sample",
-    "inspectionName": "SpellCheckingInspection",
-    "baselineState": "new"
-  },
-  "hash": "46666487e327492a084079e541653dc7c0fb2d01f7091121621d171c0c2d3b3a"
-},{
-  "tool": "Code Inspection",
-  "category": "Proofreading",
-  "type": "Typo",
-  "tags": [
     "textmate"
   ],
   "severity": "Low",
@@ -6942,6 +6910,38 @@
     "baselineState": "new"
   },
   "hash": "913732fce95346313f7bca2a89c046dea6aec3aa7afad0e0f4bcd327fdc4a87f"
+},{
+  "tool": "Code Inspection",
+  "category": "Proofreading",
+  "type": "Typo",
+  "tags": [
+    "yaml"
+  ],
+  "severity": "Low",
+  "comment": "Typo: In word 'peaceiris'",
+  "detailsInfo": "Reports typos and misspellings in your code, comments, and literals and fixes them with one click.",
+  "sources": [
+    {
+      "type": "file",
+      "path": ".github/workflows/qodana.yml",
+      "language": "yaml",
+      "line": 39,
+      "offset": 15,
+      "length": 9,
+      "code": {
+        "startLine": 37,
+        "length": 9,
+        "offset": 114,
+        "surroundingCode": "        run: echo \"${{steps.parse_json.outputs.TOTAL}} counts\"\n      - name: Deploy to GitHub Pages\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample",
+    "inspectionName": "SpellCheckingInspection",
+    "baselineState": "new"
+  },
+  "hash": "b05b60976c9fdf0b257f8f5f0ad8d2d3114fd6c14067882c474b9494f01d77c7"
 },{
   "tool": "Code Inspection",
   "category": "Proofreading",
