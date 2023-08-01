@@ -6,29 +6,29 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Cannot access class 'java.lang.Class'. Check your module classpath for missing or conflicting dependencies",
+  "comment": "Cannot access 'java.lang.Object' which is a supertype of 'com.example.qodana_sample.MainActivity'. Check your module classpath for missing or conflicting dependencies",
   "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
   "sources": [
     {
       "type": "file",
-      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 18,
-      "offset": 6,
-      "length": 4,
+      "line": 7,
+      "offset": 1,
+      "length": 486,
       "code": {
-        "startLine": 16,
-        "length": 4,
-        "offset": 68,
-        "surroundingCode": "@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test\n    fun useAppContext() {\n        // Context of the app under test."
+        "startLine": 5,
+        "length": 486,
+        "offset": 49,
+        "surroundingCode": "import androidx.appcompat.app.AppCompatActivity\n\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun greeting2(text: String): String? = \"Hello, $text!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }\n}\n"
       }
     }
   ],
   "attributes": {
-    "module": "Qodana__Sample.app.androidTest",
+    "module": "Qodana__Sample.app.main",
     "inspectionName": "QodanaSanity"
   },
-  "hash": "0236b117dffff0b9cdd363a3419ace8378b3d4b0b326615c8bf266148dc56f3f"
+  "hash": "3c0403e9e97800542b056a770b2e768ce5f541e1ad8e9e7906a3f9f7941ecd76"
 },{
   "tool": "Code Inspection",
   "category": "Qodana",
@@ -37,29 +37,29 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Cannot access class 'java.lang.Class'. Check your module classpath for missing or conflicting dependencies",
+  "comment": "Unresolved reference: os",
   "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
   "sources": [
     {
       "type": "file",
-      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 16,
-      "offset": 2,
-      "length": 7,
+      "line": 3,
+      "offset": 16,
+      "length": 2,
       "code": {
-        "startLine": 14,
-        "length": 7,
-        "offset": 73,
-        "surroundingCode": " * See [testing documentation](http://d.android.com/tools/testing).\n */\n@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test"
+        "startLine": 1,
+        "length": 2,
+        "offset": 50,
+        "surroundingCode": "package com.example.qodana_sample\n\nimport android.os.Bundle\nimport androidx.annotation.Nullable\nimport androidx.appcompat.app.AppCompatActivity"
       }
     }
   ],
   "attributes": {
-    "module": "Qodana__Sample.app.androidTest",
+    "module": "Qodana__Sample.app.main",
     "inspectionName": "QodanaSanity"
   },
-  "hash": "68a54e02aaf8c54191ceb579a6bf7fabbbbc8ce7e2fd6c88568c67801ee6772c"
+  "hash": "543cfaeb6999bd64cec6dc20a9d25592685e27ebaf66035ddc2dc5db9e770c1d"
 },{
   "tool": "Code Inspection",
   "category": "Qodana",
@@ -68,29 +68,29 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Type mismatch: inferred type is KClass but Class was expected",
+  "comment": "Unresolved reference: Bundle",
   "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
   "sources": [
     {
       "type": "file",
-      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 16,
-      "offset": 10,
-      "length": 20,
+      "line": 9,
+      "offset": 47,
+      "length": 6,
       "code": {
-        "startLine": 14,
-        "length": 20,
-        "offset": 81,
-        "surroundingCode": " * See [testing documentation](http://d.android.com/tools/testing).\n */\n@RunWith(AndroidJUnit4::class)\nclass ExampleInstrumentedTest {\n    @Test"
+        "startLine": 7,
+        "length": 6,
+        "offset": 120,
+        "surroundingCode": "class MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)"
       }
     }
   ],
   "attributes": {
-    "module": "Qodana__Sample.app.androidTest",
+    "module": "Qodana__Sample.app.main",
     "inspectionName": "QodanaSanity"
   },
-  "hash": "9d6d42b927b75cf0d991b601d379f7a7b4b5c9564079efbed318b75afecc3f1e"
+  "hash": "d443e8eddef5dc97f3f0583dec49ed7533da72f777b3ff803dd1060ddbb955cb"
 },{
   "tool": "Code Inspection",
   "category": "Qodana",
@@ -99,27 +99,27 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Cannot access 'java.lang.Object' which is a supertype of 'androidx.test.platform.app.InstrumentationRegistry'. Check your module classpath for missing or conflicting dependencies",
+  "comment": "Cannot access 'android.app.Activity' which is a supertype of 'com.example.qodana_sample.MainActivity'. Check your module classpath for missing or conflicting dependencies",
   "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
   "sources": [
     {
       "type": "file",
-      "path": "app/src/androidTest/java/com/example/qodana_sample/ExampleInstrumentedTest.kt",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
       "language": "kotlin",
-      "line": 21,
-      "offset": 50,
-      "length": 18,
+      "line": 7,
+      "offset": 1,
+      "length": 486,
       "code": {
-        "startLine": 19,
-        "length": 18,
-        "offset": 117,
-        "surroundingCode": "    fun useAppContext() {\n        // Context of the app under test.\n        val appContext = InstrumentationRegistry.getInstrumentation().targetContext\n        assertEquals(\"com.example.qodana_sample\", appContext.packageName)\n    }"
+        "startLine": 5,
+        "length": 486,
+        "offset": 49,
+        "surroundingCode": "import androidx.appcompat.app.AppCompatActivity\n\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun greeting2(text: String): String? = \"Hello, $text!\"\n\n    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }\n}\n"
       }
     }
   ],
   "attributes": {
-    "module": "Qodana__Sample.app.androidTest",
+    "module": "Qodana__Sample.app.main",
     "inspectionName": "QodanaSanity"
   },
-  "hash": "d13764669002bba9bcac87f7aa8e9553912afcfb5732e1f43fcccf4decca1cf4"
+  "hash": "dd926a060f60103b30566c324f1a179200f2d4b1427d1031748437e1a653fe0d"
 }]}

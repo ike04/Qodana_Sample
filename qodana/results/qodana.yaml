@@ -1,20 +1,5 @@
 version: "1.0"
 linter: jetbrains/qodana-jvm-android:2023.2
 profile:
-  path: .idea/inspectionProfiles/profiles_settings.xml
+  name: qodana.recommended
 projectJDK: 11
-exclude:
-  - name: CheckEmptyScriptTag
-  - name: HtmlUnknownBooleanAttribute
-  - name: CheckValidXmlInScriptTagBody
-  - name: HtmlMissingClosingTag
-  - name: RequiredAttributes
-  - name: HtmlExtraClosingTag
-  - name: HtmlUnknownAttribute
-  - name: HtmlUnknownTag
-  - name: HtmlUnknownTarget
-  - name: HtmlUnknownAnchorTarget
-  - name: HtmlWrongAttributeValue
-  - name: GrazieInspection
-  - name: LanguageDetectionInspection
-  - name: SpellCheckingInspection
