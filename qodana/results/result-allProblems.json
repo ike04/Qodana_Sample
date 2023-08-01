@@ -6759,8 +6759,7 @@
   "attributes": {
     "module": "Qodana__Sample.app.main",
     "inspectionName": "RedundantNullableReturnType",
-    "isTechDebt": "true",
-    "baselineState": "unchanged"
+    "baselineState": "new"
   },
   "hash": "1f3ed7436124c8bc22d6244a9b190c49b33569fbd48b74f6e17a315f63317bd1"
 },{
@@ -7083,8 +7082,7 @@
   "attributes": {
     "module": "Qodana__Sample.app.main",
     "inspectionName": "UnusedSymbol",
-    "isTechDebt": "true",
-    "baselineState": "unchanged"
+    "baselineState": "new"
   },
   "hash": "2977e6aceb423bf5e36b21028cdc32d2caf6df9ee56362eac333e96dae551eaf"
 },{
