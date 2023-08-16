@@ -1,1 +1,125 @@
-{"version":"3","listProblem":[]}
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Qodana",
+  "type": "Sanity",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access 'android.app.Activity' which is a supertype of 'com.example.qodana_sample.MainActivity'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 7,
+      "offset": 1,
+      "length": 488,
+      "code": {
+        "startLine": 5,
+        "length": 488,
+        "offset": 49,
+        "surroundingCode": "import androidx.appcompat.app.AppCompatActivity\n\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun greeting2(text: String): String? = \"Hello, $text!\"\n\n//    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "QodanaSanity"
+  },
+  "hash": "29fdc8c1b2a24b5e3ddbcd4638a433ffbbdb3d5853133b0148c9dbc0e2d98749"
+},{
+  "tool": "Code Inspection",
+  "category": "Qodana",
+  "type": "Sanity",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: os",
+  "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 16,
+      "length": 2,
+      "code": {
+        "startLine": 1,
+        "length": 2,
+        "offset": 50,
+        "surroundingCode": "package com.example.qodana_sample\n\nimport android.os.Bundle\nimport androidx.annotation.Nullable\nimport androidx.appcompat.app.AppCompatActivity"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "QodanaSanity"
+  },
+  "hash": "543cfaeb6999bd64cec6dc20a9d25592685e27ebaf66035ddc2dc5db9e770c1d"
+},{
+  "tool": "Code Inspection",
+  "category": "Qodana",
+  "type": "Sanity",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Bundle",
+  "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 9,
+      "offset": 47,
+      "length": 6,
+      "code": {
+        "startLine": 7,
+        "length": 6,
+        "offset": 120,
+        "surroundingCode": "class MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "QodanaSanity"
+  },
+  "hash": "d443e8eddef5dc97f3f0583dec49ed7533da72f777b3ff803dd1060ddbb955cb"
+},{
+  "tool": "Code Inspection",
+  "category": "Qodana",
+  "type": "Sanity",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access 'java.lang.Object' which is a supertype of 'com.example.qodana_sample.MainActivity'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Reports issues essential to this file like syntax errors, unresolved methods and variables, etc...",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 7,
+      "offset": 1,
+      "length": 488,
+      "code": {
+        "startLine": 5,
+        "length": 488,
+        "offset": 49,
+        "surroundingCode": "import androidx.appcompat.app.AppCompatActivity\n\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n    }\n\n    fun greeting(user: String): String? = \"Hello, $user!\"\n\n    fun greeting2(text: String): String? = \"Hello, $text!\"\n\n//    fun test(@Nullable s: String?): Int? = s?.let { it.length }\n\n    fun main() {\n        listOf(1, 2, 3).filter { it > 1 }.count()\n    }\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "QodanaSanity"
+  },
+  "hash": "f3a2695f39e9ae2461c9ec7223433df1f6a7f6b0bebd79621e3d613cdae32646"
+}]}

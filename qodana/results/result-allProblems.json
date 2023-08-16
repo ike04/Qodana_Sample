@@ -169,6 +169,39 @@
     "kotlin"
   ],
   "severity": "High",
+  "comment": "Class \"MainActivity\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "app/src/main/java/com/example/qodana_sample/MainActivity.kt",
+      "language": "kotlin",
+      "line": 7,
+      "offset": 7,
+      "length": 12,
+      "code": {
+        "startLine": 5,
+        "length": 12,
+        "offset": 55,
+        "surroundingCode": "import androidx.appcompat.app.AppCompatActivity\n\nclass MainActivity : AppCompatActivity() {\n    val unneccesarry: Int? = 0\n    override fun onCreate(savedInstanceState: Bundle?) {"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "Qodana__Sample.app.main",
+    "inspectionName": "UnusedSymbol",
+    "isTechDebt": "true",
+    "baselineState": "unchanged"
+  },
+  "hash": "1f0be12048265ef9e79f6c76d938aa8563b725f76dd339a770f28013758057a8"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "tags": [
+    "kotlin"
+  ],
+  "severity": "High",
   "comment": "Property \"unneccesarry\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
