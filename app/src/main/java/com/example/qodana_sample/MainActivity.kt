@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     fun greeting2(text: String): String? = "Hello, $text!"
 
-    fun test(@Nullable s: String?): Int? = s?.let { it.length }
+//    fun test(@Nullable s: String?): Int? = s?.let { it.length }
 
     fun main() {
         listOf(1, 2, 3).filter { it > 1 }.count()
