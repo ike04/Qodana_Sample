@@ -68,31 +68,13 @@
       "name": "Qodana__Sample.app.main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/out",
-          "excludePatterns": [],
-          "excludeFolders": [],
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out",
           "excludePatterns": [],
           "excludeFolders": [],
           "sourceFolders": []
         },
         {
-          "path": "file://$PROJECT_DIR$/app/build/generated/renderscript_source_output_dir/debug/out",
-          "excludePatterns": [],
-          "excludeFolders": [],
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/app/build/generated/res/resValues/debug",
-          "excludePatterns": [],
-          "excludeFolders": [],
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/app/build/generated/res/rs/debug",
+          "path": "file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debug/out",
           "excludePatterns": [],
           "excludeFolders": [],
           "sourceFolders": []
@@ -104,7 +86,19 @@
           "sourceFolders": []
         },
         {
-          "path": "file://$PROJECT_DIR$/app/src/debug",
+          "path": "file://$PROJECT_DIR$/app/build/generated/renderscript_source_output_dir/debug/out",
+          "excludePatterns": [],
+          "excludeFolders": [],
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/app/build/generated/res/rs/debug",
+          "excludePatterns": [],
+          "excludeFolders": [],
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/app/build/generated/res/resValues/debug",
           "excludePatterns": [],
           "excludeFolders": [],
           "sourceFolders": []
@@ -125,6 +119,12 @@
               "packagePrefix": ""
             }
           ]
+        },
+        {
+          "path": "file://$PROJECT_DIR$/app/src/debug",
+          "excludePatterns": [],
+          "excludeFolders": [],
+          "sourceFolders": []
         }
       ],
       "orderEntries": [
@@ -545,13 +545,19 @@
       "name": "Qodana__Sample.app.androidTest",
       "contentEntries": [
         {
+          "path": "file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debugAndroidTest/out",
+          "excludePatterns": [],
+          "excludeFolders": [],
+          "sourceFolders": []
+        },
+        {
           "path": "file://$PROJECT_DIR$/app/build/generated/aidl_source_output_dir/debugAndroidTest/out",
           "excludePatterns": [],
           "excludeFolders": [],
           "sourceFolders": []
         },
         {
-          "path": "file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debugAndroidTest/out",
+          "path": "file://$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug",
           "excludePatterns": [],
           "excludeFolders": [],
           "sourceFolders": []
@@ -563,19 +569,13 @@
           "sourceFolders": []
         },
         {
-          "path": "file://$PROJECT_DIR$/app/build/generated/res/resValues/androidTest/debug",
-          "excludePatterns": [],
-          "excludeFolders": [],
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/app/build/generated/res/rs/androidTest/debug",
           "excludePatterns": [],
           "excludeFolders": [],
           "sourceFolders": []
         },
         {
-          "path": "file://$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug",
+          "path": "file://$PROJECT_DIR$/app/build/generated/res/resValues/androidTest/debug",
           "excludePatterns": [],
           "excludeFolders": [],
           "sourceFolders": []
